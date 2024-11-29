@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanta.js Working Example</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.waves.min.js"></script>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    #background {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .content {
+      position: relative;
+      z-index: 1; /* Make sure content is above the Vanta.js background */
+      color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="background"></div>
+  <div class="content">
+    <h1>Welcome to Vanta.js</h1>
+    <p>Enjoy the animated background!</p>
+  </div>
+  <script>
+    // Ensure Vanta.js is applied once the DOM is fully loaded
+    document.addEventListener("DOMContentLoaded", function () {
+      VANTA.WAVES({
+        el: "#background",
+        color: 0x1e90ff, // Blue color
+        shininess: 50,
+        waveHeight: 20,
+        waveSpeed: 1.2,
+        zoom: 1
+      });
+    });
+  </script>
+</body>
+</html>
