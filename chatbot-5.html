@@ -69,21 +69,23 @@
          <!-- ... start hero section ... -->
          <section class="hero_section3" id="vanta_bg">
             <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-lg-9">
-                  <div class="hero_content">
-                    <h1 class="hero_title">Automate Your Bookkeeping with Precision and Speed</h1>
-                    <p class="hero_desc" data-aos="fade-up">
-                        Effortlessly sync your invoices from multiple applications into QuickBooks with unmatched accuracy and zero manual work.
-                    </p>
-                    <div data-aos="fade-up" data-aos-delay="100">
-                      <a class="btn btn_primary" href="https://calendly.com/feazibleai"><i class="fa-solid fa-phone me-2"></i>Get a free demo</a>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="hero_content">
+                            <h1 class="hero_title">Automate Your Bookkeeping with Precision and Speed</h1>
+                            <p class="hero_desc" data-aos="fade-up">
+                                Effortlessly sync your invoices from multiple applications into QuickBooks with unmatched accuracy and zero manual work.
+                            </p>
+                            <div data-aos="fade-up" data-aos-delay="100">
+                                <a class="btn btn_primary" href="https://calendly.com/feazibleai">
+                                    <i class="fa-solid fa-phone me-2"></i>Get a free demo
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </section>
+        </section>
         <!-- ... end hero section ... -->
 
         <!-- ... start Platform section ... -->
@@ -590,14 +592,19 @@
                     <div class="col-sm-6 col-md-3 footer_col_2">
                         <div class="footer_colContent">
                             <h2 class="footer_colTitle">Quick Links</h2>
-                            <ul class="footer_nav">
+                            <ul class="footer_nav two-column-list">
                                 <li class="footer_navItem">
                                     <a class="footer_navLink" href="index.html">Home</a>
                                 </li>
-
-                                <li class="footer_navItem"><a class="footer_navLink" href="chatbot-5.html">Book-keeping</a></li>
-                                <li class="footer_navItem"><a class="footer_navLink" href="chatbot.html">AI Chatbot</a></li>
-                                <li class="footer_navItem"><a class="footer_navLink" href="chatbot-4.html">Cross-Platform Sync</a></li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="chatbot-5.html">Book-keeping</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="chatbot.html">AI Chatbot</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="chatbot-4.html">Cross-Platform Sync</a>
+                                </li>
                                 <li class="footer_navItem">
                                     <a class="footer_navLink" href="chatbot.html">Case studies</a>
                                 </li>
@@ -606,7 +613,7 @@
                                 </li>
                                 <li class="footer_navItem">
                                     <a class="footer_navLink" href="resources.html">Resources</a>
-                                
+                                </li>
                                 <li class="footer_navItem">
                                     <a class="footer_navLink" href="privacy-policy.html">Privacy Policy</a>
                                 </li>
@@ -616,13 +623,15 @@
                             </ul>
                         </div>
                     </div>
+                    
                     <div class="col-sm-6 col-md-3 footer_col_3">
                         <div class="footer_colContent">
                             <h2 class="footer_colTitle">Contact Us</h2>
                             <ul class="footer_nav">
                                 <li class="footer_navItem">
-                                    Phone: <a class="footer_navLink" href="tel:(555) 123-4567">+44 7982 145739</a>
-                                </li>
+                                    Phone: <a class="footer_navLink" href="tel:+447982145739" style="white-space: nowrap; font-family: Arial, sans-serif;">+44 7982 145 739</a>
+                                </li>                                
+                                
                                 <li class="footer_navItem">
                                     Email: <a class="footer_navLink" href="mailto:info@aibookkeeping.com">CEO@feazible.ai</a>
                                 </li>
@@ -642,6 +651,9 @@
                                 </li>
                                 <li class="footer_navItem">
                                     <a class="footer_navLink" href="https://www.facebook.com/share/1AqGZzyk4V/?mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="https://www.instagram.com/feazibleAI" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -665,23 +677,57 @@
 
 
     <script>
+        // Initialize VANTA effect
         VANTA.DOTS({
-          el: "#vanta_bg", // Correctly target your existing element
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          scale: 1.00,
-          scaleMobile: 1.00,
-          color: 0xffffff,
-          color2: 0xffffff,
-          backgroundColor: 0x0f2238, // Corrected the background color syntax
-          size: 2.90,
-          spacing: 31.00,
+            el: "#vanta_bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xffffff,
+            color2: 0xffffff,
+            backgroundColor: 0x0f2238, // Base color of the VANTA effect
+            size: 2.90,
+            spacing: 31.00,
             showLines: false
         });
     </script>
+    
+    <style>
+        /* Base styling for the VANTA section */
+        #vanta_bg {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        /* Add a gradient overlay */
+        #vanta_bg::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(15, 34, 56, 0) 70%, #000515 100%);
+            z-index: 1; /* Ensures the gradient is above the VANTA canvas */
+            pointer-events: none; /* Ensures it doesn't block interactions */
+        }
+    
+        /* Ensure content stays visible */
+        .hero_content {
+            position: relative;
+            z-index: 2; /* Content above both VANTA and gradient */
+            text-align: center;
+            color: white;
+        }
+    </style>
+    
         
 
     <!-- .......... scripts .......... -->

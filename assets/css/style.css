@@ -377,6 +377,7 @@ p,ul,input,button{
 .hero_title{
   font-size: var(--fs_70);
   font-weight: 800;
+  margin-right: -8rem;
   margin-bottom: 1rem;
 }
 .hero_desc{
@@ -1823,8 +1824,8 @@ h2,
 }
 .service_item{
   padding: 9.75rem 3.2rem 4.5rem;
-  background: -webkit-gradient(linear, left top, right top, from(#00B3CE), to(#006288));
   background: -o-linear-gradient(left, #00B3CE, #006288);
+  background: -webkit-gradient(linear, left top, right top, from(#00B3CE), to(#006288));
   background: linear-gradient(to right, #00B3CE, #006288);
   
   border-radius: 0.75rem;
@@ -1980,8 +1981,8 @@ h2,
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-image: -webkit-gradient(linear,left top, right top,from(#006288), to(#00B4CF));
   background-image: -o-linear-gradient(left,#006288, #00B4CF);
+  background-image: -webkit-gradient(linear,left top, right top,from(#006288), to(#00B4CF));
   background-image: linear-gradient(to right,#006288, #00B4CF);
 }
 .ourProcess_item:last-of-type::before{
@@ -2022,8 +2023,8 @@ h2,
   font-weight: 700;
   width: 7.8131rem;
   height: 7.8131rem;
-  background: -webkit-gradient(linear, left top, right top, color-stop(-68.96%, #00ECFF), to(#006288));
   background: -o-linear-gradient(left, #00ECFF -68.96%, #006288 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(-68.96%, #00ECFF), to(#006288));
   background: linear-gradient(90deg, #00ECFF -68.96%, #006288 100%);
   border: 0.3091rem solid #01AECA;
   -webkit-box-shadow: -0.9273rem 0.9273rem 0.6182rem rgba(0, 0, 0, 0.25);
@@ -2170,6 +2171,231 @@ h2,
 /* ... end subscribe section ... */
 /* _______________________ end chatbot 4 page _______________________ */
 
+/* _______________________ start chatbot 5 page _______________________ */
+/* ... start hero section ... */
+.hero_section4{
+  background-image: url("../img/chatbot-5/hero-bg.jpg");
+  background-repeat: no-repeat;
+  padding: 22.8125rem 0rem 21.5rem;
+  background-size: cover;
+}
+.hero_section4 .hero_content{
+  padding: 0rem;
+  text-align: center;
+}
+.hero_section4 .hero_title{
+  margin-right: auto;
+}
+@media(max-width:991.98px){
+  .hero_section4{
+    padding: 18rem 0rem 12rem;
+  }
+}
+/* ... end hero section ... */
+
+/* ... start section 3 ... */
+.section__3{
+  padding: 8rem 0rem;
+}
+/* ... end section 3 ... */
+
+/* ... start Our 3-Step Process to AI-Powered Bookkeeping section ... */
+.processStep_section{
+  padding: 9.375rem 0rem;
+  position: relative;
+}
+.processStep_section::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 15%;
+  font-size: 73.625rem;
+  width: 1em;
+  height: 0.562em;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: rgba(1, 122, 186, 0.15);
+  -webkit-filter: blur(7.2531rem);
+          filter: blur(7.2531rem);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.processStep_section .section_desc{
+  margin-bottom: 6rem;
+}
+.processStep_list{
+  --bs-gutter-x: 1.875rem;
+  --bs-gutter-y: 2.5rem;
+}
+.processStep_item{
+  padding: 0rem 1.2rem 2.25rem;
+  background: -o-linear-gradient(left,#00BED7,#006288);
+  background: -webkit-gradient(linear,left top, right top,from(#00BED7),to(#006288));
+  background: linear-gradient(to right,#00BED7,#006288);
+  border-radius: 0.75rem;
+  position: relative;
+  min-height: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  height: 100%;
+}
+.processStep_item>*{
+  position: relative;
+}
+.processStep_item::before{
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: 1px; 
+  bottom: 1px; 
+  left: 1px;
+  border-radius: inherit; 
+  background: #0e1d32;
+  -webkit-backdrop-filter: blur(20.3px);
+          backdrop-filter: blur(20.3px);
+}
+.processStep_title{
+  font-size: var(--fs_19);
+  margin-bottom: 0.9em;
+  background: #011120;
+  -webkit-box-shadow: 0rem 0.25rem 0.25rem rgba(0, 236, 255, 0.2);
+          box-shadow: 0rem 0.25rem 0.25rem rgba(0, 236, 255, 0.2);
+  border-radius: 0.3125rem;
+  padding: 0.875rem 2.25rem;
+  margin: -0.5rem -2rem 2rem;
+  border: 1px solid #006288;
+  position: relative;
+}
+.processStep_title::before{
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background-color: inherit;
+  border: inherit;
+  position: absolute;
+  z-index: -1;
+  left: 0rem;
+  bottom: 0rem;
+  -webkit-transform: translate(25%,50%) rotate(45deg);
+      -ms-transform: translate(25%,50%) rotate(45deg);
+          transform: translate(25%,50%) rotate(45deg);
+}
+.processStep_desc{
+
+}
+@media(max-width:767.98px){
+  .processStep_section {
+    padding: 5rem 0rem;
+  }
+}
+
+/*  */
+.processStep__list{
+
+}
+.processStep__item{
+  padding: 3.4375rem 2.25rem 3.4375rem 14.875rem;
+  background: -o-linear-gradient(left,#00BED7,#006288);
+  background: -webkit-gradient(linear,left top, right top,from(#00BED7),to(#006288));
+  background: linear-gradient(to right,#00BED7,#006288);
+  border-radius: 0.75rem;
+  position: relative;
+  height: 100%;
+  margin: 8.375rem 0rem 0rem 6.25rem;
+}
+.processStep__item>*{
+  position: relative;
+}
+.processStep__item::before{
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: 1px; 
+  bottom: 1px; 
+  left: 1px;
+  border-radius: inherit; 
+  background: #0e1d32;
+  -webkit-backdrop-filter: blur(20.3px);
+          backdrop-filter: blur(20.3px);
+}
+.processStep__num{
+  width: 17.125rem;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  -webkit-transform: translate(-34%,-34%);
+      -ms-transform: translate(-34%,-34%);
+          transform: translate(-34%,-34%);
+}
+.processStep__num::before{
+  content: "";
+  display: block;
+  padding-bottom: 82.12%;
+  background-image: url("../img/chatbot-5/step_num_bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.processStep__num span{
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+  font-family: var(--ff_work_sans);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  text-transform: capitalize;
+  background: -webkit-gradient(linear, left top, right top, color-stop(-68.96%, #00ECFF), to(#006288));
+  background: -o-linear-gradient(left, #00ECFF -68.96%, #006288 100%);
+  background: linear-gradient(90deg, #00ECFF -68.96%, #006288 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.processStep__title{
+  color: var(--c_primary);
+  font-size: var(--fs_19);
+  margin-bottom: 1rem;
+}
+.processStep__list li{
+  margin-bottom: 1rem;
+}
+@media(max-width:991.98px){
+  .processStep__item {
+    padding: 3rem 2.25rem 3rem 9rem;
+  }
+  .processStep__num {
+    width: 13rem;
+  }
+}
+
+@media(max-width:575.98px){
+  .processStep__item {
+    padding: 8rem 2rem 2rem;
+    margin: 8.375rem 0rem 0rem 0rem;
+  }
+  .processStep__num {
+    -webkit-transform: translate(10%,-34%);
+        -ms-transform: translate(10%,-34%);
+            transform: translate(10%,-34%);
+  }
+}
+/* ... end Our 3-Step Process to AI-Powered Bookkeeping section ... */
+/* _______________________ end chatbot 5 page _______________________ */
+/* ... end subscribe section ... */
+/* _______________________ end chatbot 4 page _______________________ */
+
 /* Default navbar styles */
 /* Default navbar styles */
 .navbar-nav .dropdown-toggle {
@@ -2219,6 +2445,12 @@ h2,
   /* When the mobile navbar is collapsed, the dropdown should show up in a full-screen overlay */
   .navbar-collapse {
       position: relative;
+  }
+  .navbar-nav .dropdown-menu.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    padding-top: 140px;
   }
 
   .navbar-nav .dropdown-menu {
@@ -2276,4 +2508,16 @@ h2,
   .hero_title {
       font-size: 35px;
   }
+  .navbar-nav .dropdown-menu.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    padding-top: 140px;
+  }
 }
+
+
+
+
+
+
