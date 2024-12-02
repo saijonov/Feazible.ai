@@ -67,21 +67,23 @@
     <main class="main">
 
          <!-- ... start hero section ... -->
-         <section class="hero_section4">
+         <section class="hero_section3" id="vanta_bg">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-9">
-                        <div class="hero_content">
-                            <h1 class="hero_title">Automate Your Bookkeeping with Precision and Speed</h1>
-                            <p class="hero_desc" data-aos="fade-up">Effortlessly sync your invoices from multiple applications into QuickBooks with unmatched accuracy and zero manual work.</p>
-                            <div data-aos="fade-up" data-aos-delay="100">
-                                <a class="btn btn_primary" href="https://calendly.com/feazibleai">Get a free demo</a>
-                            </div>
-                        </div>
+              <div class="row justify-content-center">
+                <div class="col-lg-9">
+                  <div class="hero_content">
+                    <h1 class="hero_title">Automate Your Bookkeeping with Precision and Speed</h1>
+                    <p class="hero_desc" data-aos="fade-up">
+                        Effortlessly sync your invoices from multiple applications into QuickBooks with unmatched accuracy and zero manual work.
+                    </p>
+                    <div data-aos="fade-up" data-aos-delay="100">
+                      <a class="btn btn_primary" href="https://calendly.com/feazibleai"><i class="fa-solid fa-phone me-2"></i>Get a free demo</a>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+          </section>
         <!-- ... end hero section ... -->
 
         <!-- ... start Platform section ... -->
@@ -657,6 +659,30 @@
         </div>
     </footer>
     <!-- __________________ end footer area  __________________ -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.dots.min.js"></script>
+
+
+    <script>
+        VANTA.DOTS({
+          el: "#vanta_bg", // Correctly target your existing element
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0xffffff,
+          color2: 0xffffff,
+          backgroundColor: 0x0f2238, // Corrected the background color syntax
+          size: 2.90,
+          spacing: 31.00,
+            showLines: false
+        });
+    </script>
+        
 
     <!-- .......... scripts .......... -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
