@@ -1,0 +1,363 @@
+/* Core variables */
+:root {
+    --primary-dark: #0f2238;
+    --primary-blue: #ffffff;
+    --accent-blue: #ffffff;
+    --light-blue: #3182ce;
+    --text-white: #ffffff;
+    --text-light: rgba(255, 255, 255, 0.9);
+    --card-bg: rgba(26, 60, 92, 0.4);
+    --gradient-blue: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-blue) 100%);
+}
+
+/* Global Styles */
+body {
+    background-color: var(--primary-dark);
+    color: var(--text-white);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0rem 0 14rem;
+    text-align: center;
+}
+
+.hero_content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 5.5rem;
+    margin-bottom: 1.5rem;
+    background: var(--gradient-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero_subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 9rem;
+    opacity: 0.9;
+}
+
+.hero_badges {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.badge {
+    padding: 1.5rem 2.5rem;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.badge:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Case Studies Grid */
+.cases_grid {
+    padding: 6rem 0;
+}
+
+.case_filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filter_btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: var(--card-bg);
+    color: var(--text-white);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter_btn.active {
+    background: var(--light-blue);
+}
+
+/* Case Card */
+.case_card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.case_card:hover {
+    transform: translateY(-5px);
+}
+
+.case_header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.case_icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-blue);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.case_category {
+    color: var(--light-blue);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.case_title {
+    margin: 0.5rem 0;
+    font-size: 1.75rem;
+}
+
+.case_metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.metric {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.metric_value {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--light-blue);
+    margin-bottom: 0.5rem;
+}
+
+.metric_label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.case_expand {
+    width: 100%;
+    padding: 1rem;
+    background: transparent;
+    border: 1px solid var(--light-blue);
+    color: var(--text-white);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.case_expand:hover {
+    background: var(--light-blue);
+}
+
+.case_details {
+    display: none;
+    margin-top: 2rem;
+}
+
+.implementation_timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline_item {
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.timeline_item::before {
+    content: '';
+    position: absolute;
+    left: -2rem;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: var(--light-blue);
+}
+
+.timeline_item::after {
+    content: '';
+    position: absolute;
+    left: -2.25rem;
+    top: 0.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: var(--light-blue);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .case_metrics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .case_metrics {
+        grid-template-columns: 1fr;
+    }
+
+    .case_header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Adding to existing CSS */
+
+/* Case Actions */
+.case_actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.btn_outline {
+    background: transparent;
+    border: 1px solid var(--light-blue);
+    color: var(--text-white);
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn_outline:hover {
+    background: var(--light-blue);
+    color: var(--text-white);
+}
+
+/* Let's Talk Section */
+.lets_talk {
+    margin-top: 4rem;
+    padding: 4rem 2rem;
+    background: var(--card-bg);
+    border-radius: 55px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lets_talk_content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: var(--gradient-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.lets_talk_content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.lets_talk_actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+    .case_actions {
+        flex-direction: column;
+    }
+    
+    .lets_talk_content h2 {
+        font-size: 2rem;
+    }
+}
+
+
+/* Filter styles */
+.filter_container {
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+}
+
+.filter_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.filter_btn {
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #1e3a8a;
+    border-radius: 30px;
+    background: transparent;
+    color: #1e3a8a;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.filter_btn:hover {
+    background: rgba(30, 58, 138, 0.1);
+}
+
+.filter_btn.active {
+    background: #1e3a8a;
+    color: white;
+}
+
+/* Case card transitions */
+.case_card {
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.case_card.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    display: none;
+}

@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies - Feazible AI</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/case-studies.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header fixed-top">
+        <div class="container container_lg">
+            <nav class="navbar navbar-expand-xl d-flex justify-content-between py-0">
+                <a class="navbar-brand py-0" href="index.html">
+                    <img style="width: 200px; transform: scale(5);" class="header_logo" src="assets/img/logonew.png" alt="feazible ai">
+                </a>
+                <div class="header_backDrop"></div>
+                <div class="header_navContent" id="header_navContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Solutions
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
+                                <li><a class="dropdown-item" href="chatbot-5.html">Book-keeping</a></li>
+                                <li><a class="dropdown-item" href="chatbot.html">AI Chatbot</a></li>
+                                <li><a class="dropdown-item" href="chatbot-4.html">Cross-Platform Sync</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="case-studies.html">Case studies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact_us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resources.html">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn_primary" href="https://calendly.com/feazibleai">Let's talk</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler menu_toggleBtn" type="button">
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="vanta_bg">
+        <div class="container">
+            <div class="hero_content" data-aos="fade-up">
+                <h1>Revolutionizing Industries</h1>
+                <p class="hero_subtitle">Through Intelligent Automation Solutions</p>
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <a class="btn btn_primary" href="https://calendly.com/feazibleai">
+                        <i class="fa-solid fa-phone me-2"></i>Let's talk
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Grid -->
+    <section class="cases_grid">
+        <div class="container">
+            <div class="case_filters" data-aos="fade-up">
+                <button class="filter_btn active" data-filter="all">All Cases</button>
+                <button class="filter_btn" data-filter="real-estate">Real Estate</button>
+                <button class="filter_btn" data-filter="digital-marketing">Digital Marketing</button>
+                <button class="filter_btn" data-filter="healthcare">Healthcare</button>
+                <button class="filter_btn" data-filter="ecommerce">E-commerce</button>
+                <button class="filter_btn" data-filter="restaurant">Restaurant</button>
+                <button class="filter_btn" data-filter="logistics">Logistics</button>
+            </div>
+
+            <div class="cases_container">
+                <!-- Real Estate Case -->
+                <article class="case_card" data-category="real-estate" data-aos="fade-up">
+                    <div class="case_header">
+                        
+                        <div class="case_meta">
+                            <span class="case_category">Real Estate</span>
+                            <h2 class="case_title">Revolutionizing Airbnb Property Management</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="case_content">
+                        <div class="case_section">
+                            <h3>Problem</h3>
+                            <p>The client, operating multiple properties on Airbnb, faced challenges in efficiently managing communications with potential guests. The existing process was manual, time-consuming, and lacked a method to assess guest reliability and intent, which are critical for optimizing booking quality and property management.</p>
+                        </div>
+
+                        <div class="case_section">
+                            <h3>Proposed Solution</h3>
+                            <p>We developed an AI-powered chatbot integrated with WhatsApp to automate interactions with potential guests. This solution streamlined communication by handling inquiries, providing booking details, and assessing the potential quality of guests based on their responses. The chatbot was designed to capture key information and use it to score guests, thereby aiding in decision-making regarding bookings.</p>
+                        </div>
+
+                        <div class="case_metrics">
+                            <div class="metric">
+                                <span class="metric_value">85%</span>
+                                <span class="metric_label">Time Saved</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric_value">95%</span>
+                                <span class="metric_label">Response Rate</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric_value">100%</span>
+                                <span class="metric_label">Data Organization</span>
+                            </div>
+                        </div>
+
+                        <button class="case_expand" onclick="expandCase(this)">
+                            View Implementation Process
+                        </button>
+
+                        <div class="case_details">
+                            <div class="implementation_timeline">
+                                <div class="timeline_item">
+                                    <h4>Chatbot Development</h4>
+                                    <p>We developed a custom chatbot capable of understanding and responding to various guest inquiries related to the properties. The bot was equipped to handle general questions, booking procedures, and specific queries about events or special accommodations.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Integration with WhatsApp</h4>
+                                    <p>Seamless communication channel integration preferred by users.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Guest Scoring System</h4>
+                                    <p>Based on the interaction with potential guests, the chatbot assessed the suitability of the guest for the property. It considered factors like the nature of the stay (e.g., event, vacation, business), responsiveness, and specific requests.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Data Management</h4>
+                                    <p>All guest data collected through interactions was automatically fed into a Google Sheet. This sheet included columns for guest name, contact information, date of inquiry, type of inquiry, guest score, and any special notes or flags raised by the chatbot.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Continuous Learning</h4>
+                                    <p>The system was designed to learn from each interaction, refining its scoring algorithms and response effectiveness based on feedback and outcomes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                </article>
+
+                <article class="case_card" data-category="real-estate" data-aos="fade-up">
+                    <div class="case_header">
+                        
+                        <div class="case_meta">
+                            <span class="case_category">Real Estate</span>
+                            <h2 class="case_title">AI-Powered Email Management System</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="case_content">
+                        <div class="case_section">
+                            <h3>Problem</h3>
+                            <p>The client, a real estate manager, received an overwhelming volume of 100 to 150 emails daily. These ranged from maintenance requests to internal communication and tenant inquiries, making it difficult to manage, prioritize, and respond in a timely manner.</p>
+                        </div>
+                
+                        <div class="case_section">
+                            <h3>Proposed Solution</h3>
+                            <p>We developed an AI-driven automation system that intelligently categorizes incoming emails into relevant groups such as Maintenance, Internal Communications, Tenant Issues, and Inquiries. The system automatically forwards categorized emails to appropriate team members and provides daily WhatsApp summaries.</p>
+                        </div>
+                
+                        <div class="case_metrics">
+                            <div class="metric">
+                                <span class="metric_value">90%</span>
+                                <span class="metric_label">Time Saved</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric_value">100%</span>
+                                <span class="metric_label">Email Organization</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric_value">75%</span>
+                                <span class="metric_label">Faster Response Time</span>
+                            </div>
+                        </div>
+                
+                        <button class="case_expand" onclick="expandCase(this)">
+                            View Implementation Process
+                        </button>
+                
+                        <div class="case_details">
+                            <div class="implementation_timeline">
+                                <div class="timeline_item">
+                                    <h4>AI Model Training</h4>
+                                    <p>We trained a machine learning model on a labeled dataset of emails to recognize and categorize text based on keywords and phrases pertinent to real estate management.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Email Server Integration</h4>
+                                    <p>The system was integrated directly with the client's email servers to intercept and process incoming messages in real time.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Automated Routing</h4>
+                                    <p>Upon categorization, emails were automatically forwarded to designated team members' inboxes according to their area of responsibility.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>WhatsApp Integration</h4>
+                                    <p>A daily summary script collected insights from categorized emails and sent concise summaries to the client's WhatsApp, focusing on key actions and information.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Feedback System</h4>
+                                    <p>We implemented a feedback mechanism allowing the client to correct or re-categorize emails if necessary, continually improving the AI's accuracy.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="case_card" data-category="manufacturing" data-aos="fade-up">
+                    <div class="case_header">
+                        
+                        <div class="case_meta">
+                            <span class="case_category">Manufacturing</span>
+                            <h2 class="case_title">Automated Invoice Processing System</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="case_content">
+                        <div class="case_section">
+                            <h3>Problem</h3>
+                            <p>The client, operating in the manufacturing sector with a focus on supplying car and machine parts, was overwhelmed with the volume of incoming invoices via email. These invoices needed to be manually processed and categorized, a labor-intensive process prone to errors and delays, affecting the efficiency of accounts payable and inventory management.</p>
+                        </div>
+                
+                        <div class="case_section">
+                            <h3>Proposed Solution</h3>
+                            <p>We developed an AI-powered automation system that processes incoming invoices received via email by extracting key data, adding it to a dedicated Google Sheet for each invoice, and automatically categorizing the email based on the type of invoice. This solution was designed to minimize manual input, reduce processing time, and ensure high accuracy in financial and inventory records.</p>
+                        </div>
+                
+                        <div class="case_metrics">
+                            <div class="metric">
+                                <span class="metric_value">95%</span>
+                                <span class="metric_label">Accuracy Rate</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric_value">80%</span>
+                                <span class="metric_label">Time Saved</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric_value">100%</span>
+                                <span class="metric_label">Data Organization</span>
+                            </div>
+                        </div>
+                
+                        <button class="case_expand" onclick="expandCase(this)">
+                            View Implementation Process
+                        </button>
+                
+                        <div class="case_details">
+                            <div class="implementation_timeline">
+                                <div class="timeline_item">
+                                    <h4>Email Monitoring</h4>
+                                    <p>The system continuously monitors the client's email for incoming invoices.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>AI-Powered Data Extraction</h4>
+                                    <p>Using optical character recognition (OCR) and AI, the system identifies and extracts critical data from the invoices such as supplier name, date, invoice number, and line item details.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Google Sheets Integration</h4>
+                                    <p>For each processed invoice, a new Google Sheet is automatically generated and populated with the extracted data. Each sheet is appropriately named and timestamped to ensure easy tracking.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Automated Email Categorization</h4>
+                                    <p>The system uses predefined rules to categorize emails based on the type of parts invoiced (e.g., car parts, machine parts) and directs them to the corresponding department for further processing.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Continuous Learning</h4>
+                                    <p>The AI model is designed to learn from ongoing operations, improving its accuracy and efficiency over time through machine learning techniques.</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        
+                    </div>
+                </article>
+
+                <article class="case_card" data-category="real-estate" data-aos="fade-up">
+                    <div class="case_header">
+                        
+                        <div class="case_meta">
+                            <span class="case_category">Real Estate</span>
+                            <h2 class="case_title">Automated Property Maintenance Scheduling</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="case_content">
+                        <div class="case_section">
+                            <h3>Problem</h3>
+                            <p>The client manages multiple properties, each requiring regular maintenance. Managing and scheduling these maintenance appointments manually, especially ensuring they are booked well in advance, was time-consuming and prone to human error. The client needed an efficient way to handle these tasks to ensure property upkeep and tenant satisfaction.</p>
+                        </div>
+                
+                        <div class="case_section">
+                            <h3>Proposed Solution</h3>
+                            <p>We developed an AI-driven automation system that leverages data from a Google Sheet containing scheduled maintenance due dates for each property. The system automatically sends out emails to the respective service providers 6 weeks prior to each scheduled appointment. This automation ensures timely maintenance and reduces the administrative burden on the client.</p>
+                        </div>
+                
+                        <div class="case_metrics">
+                            <div class="metric">
+                                <span class="metric_value">90%</span>
+                                <span class="metric_label">Time Saved</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric_value">98%</span>
+                                <span class="metric_label">On-Time Maintenance</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric_value">95%</span>
+                                <span class="metric_label">Tenant Satisfaction</span>
+                            </div>
+                        </div>
+                
+                        <button class="case_expand" onclick="expandCase(this)">
+                            View Implementation Process
+                        </button>
+                
+                        <div class="case_details">
+                            <div class="implementation_timeline">
+                                <div class="timeline_item">
+                                    <h4>Google Sheets Setup</h4>
+                                    <p>The system uses a Google Sheet where each row contains details such as property address, type of maintenance required, and due date for the next service.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Automated Email Triggers</h4>
+                                    <p>Using scripting within the Google Sheets environment (e.g., Google Apps Script), we programmed triggers that automatically send scheduling emails to the appropriate service providers 6 weeks in advance of the due date.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Email Template Customization</h4>
+                                    <p>Custom email templates were created to communicate all necessary details to the service providers, ensuring clarity and reducing the need for back-and-forth communication.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Monitoring and Notifications</h4>
+                                    <p>The client receives automated notifications about each scheduled and confirmed appointment, keeping them informed without requiring direct involvement in the scheduling process.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Feedback Loop</h4>
+                                    <p>The system includes a mechanism for updating the spreadsheet based on feedback from service providers, such as rescheduled or canceled appointments, enhancing the accuracy of the scheduling process.</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                    
+                    </div>
+                </article>
+
+                <article class="case_card" data-category="healthcare" data-aos="fade-up">
+                    <div class="case_header">
+                        
+                        <div class="case_meta">
+                            <span class="case_category">Healthcare</span>
+                            <h2 class="case_title">Automated Prescription & Insurance Processing</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="case_content">
+                        <div class="case_section">
+                            <h3>Problem</h3>
+                            <p>The client operates a medical store that sells prescription-based products, working closely with insurance companies. The manual process of verifying prescriptions and submitting insurance claims was labor-intensive, prone to errors, and required dedicated staff, which was costly and inefficient.</p>
+                        </div>
+                
+                        <div class="case_section">
+                            <h3>Proposed Solution</h3>
+                            <p>We developed an AI-powered automation system that streamlined the prescription verification and insurance submission process. When customers uploaded their prescriptions, either online or in-store, the system automatically extracted relevant information and populated it into a structured Google Sheet. This data was then automatically formatted and forwarded to the respective insurance companies for processing claims, all without manual intervention.</p>
+                        </div>
+                
+                        <div class="case_metrics">
+                            <div class="metric">
+                                <span class="metric_value">95%</span>
+                                <span class="metric_label">Labor Reduction</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric_value">99%</span>
+                                <span class="metric_label">Accuracy Rate</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric_value">85%</span>
+                                <span class="metric_label">Time Saved</span>
+                            </div>
+                        </div>
+                
+                        <button class="case_expand" onclick="expandCase(this)">
+                            View Implementation Process
+                        </button>
+                
+                        <div class="case_details">
+                            <div class="implementation_timeline">
+                                <div class="timeline_item">
+                                    <h4>Prescription Upload Interface</h4>
+                                    <p>An interface was set up for customers to upload their prescriptions securely either through the online store or via in-store tablets.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>AI Data Extraction</h4>
+                                    <p>Using OCR and AI technologies, the system extracted patient data, medication details, dosages, and prescribing doctor information from the uploaded prescriptions.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Google Sheets Integration</h4>
+                                    <p>Extracted data was automatically entered into a Google Sheet with predefined columns for each data type, facilitating easy review and audits.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Automated Form Filling</h4>
+                                    <p>The system then used the data in Google Sheets to auto-fill insurance claim forms, which were directly submitted to the insurance companies.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Automation Workflow</h4>
+                                    <p>A workflow was established to handle exceptions where prescriptions did not meet specific criteria, requiring manual intervention.</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        
+                    </div>
+                </article>
+
+                <article class="case_card" data-category="ecommerce" data-aos="fade-up">
+                    <div class="case_header">
+                        
+                        <div class="case_meta">
+                            <span class="case_category">E-commerce</span>
+                            <h2 class="case_title">Automated Sports Ticket Sales Analytics</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="case_content">
+                        <div class="case_section">
+                            <h3>Problem</h3>
+                            <p>The client operates an online store selling sports tickets and faced challenges in efficiently managing and tracking data from completed orders. They required a system that could automatically collect relevant order information and store it in a Google Sheet for easy tracking and analysis. Additionally, they needed enhanced reporting capabilities to better understand sales trends and customer behavior.</p>
+                        </div>
+                
+                        <div class="case_section">
+                            <h3>Proposed Solution</h3>
+                            <p>We implemented an AI-driven automation system that connects the client's WooCommerce platform to a Google Sheet. This system not only captures and records every detail from completed orders but also organizes the data into comprehensive reports. It allows for real-time updates and easy access, facilitating better sales tracking and customer management.</p>
+                        </div>
+                
+                        <div class="case_metrics">
+                            <div class="metric">
+                                <span class="metric_value">90%</span>
+                                <span class="metric_label">Time Saved</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric_value">100%</span>
+                                <span class="metric_label">Data Accuracy</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric_value">75%</span>
+                                <span class="metric_label">Efficiency Boost</span>
+                            </div>
+                        </div>
+                
+                        <button class="case_expand" onclick="expandCase(this)">
+                            View Implementation Process
+                        </button>
+                
+                        <div class="case_details">
+                            <div class="implementation_timeline">
+                                <div class="timeline_item">
+                                    <h4>Integration with WooCommerce</h4>
+                                    <p>We utilized WooCommerce's API to create a direct link with Google Sheets, ensuring that every completed order is automatically recorded.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Data Extraction and Structuring</h4>
+                                    <p>Key order details such as customer information, ticket type, quantity, price, and transaction date are extracted and neatly organized in Google Sheets.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Automated Reporting Functions</h4>
+                                    <p>The system includes functionalities to generate periodic sales reports, inventory status updates, and customer behavior analytics.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Security Measures</h4>
+                                    <p>Implemented robust security protocols to ensure all customer and transaction data is securely handled and compliant with data protection regulations.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>User Interface for Monitoring</h4>
+                                    <p>Developed a user-friendly dashboard within Google Sheets that allows the client to monitor and manage order data effortlessly.</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                    
+                    </div>
+                </article>
+
+                <article class="case_card" data-category="restaurant" data-aos="fade-up">
+                    <div class="case_header">
+                        
+                        <div class="case_meta">
+                            <span class="case_category">Restaurant & Hospitality</span>
+                            <h2 class="case_title">Smart Inventory Management System</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="case_content">
+                        <div class="case_section">
+                            <h3>Problem</h3>
+                            <p>Restaurants frequently face challenges related to inventory management, such as overordering or underordering ingredients, leading to significant food waste or missed sales opportunities. These issues stem from a lack of real-time data on inventory levels and consumption patterns, making it difficult for restaurant managers to make informed purchasing decisions.</p>
+                        </div>
+                
+                        <div class="case_section">
+                            <h3>Proposed Solution</h3>
+                            <p>We developed an AI-driven automation system that integrates with the restaurant's existing POS (Point of Sale) system and inventory database to track and analyze ingredient usage and customer demand trends. The system uses predictive analytics to forecast future inventory needs based on historical data, seasonal trends, and upcoming promotions. Additionally, it automatically places orders with suppliers when stock levels approach predefined thresholds.</p>
+                        </div>
+                
+                        <div class="case_metrics">
+                            <div class="metric">
+                                <span class="metric_value">65%</span>
+                                <span class="metric_label">Food Waste Reduction</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric_value">85%</span>
+                                <span class="metric_label">Time Saved</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric_value">40%</span>
+                                <span class="metric_label">Cost Reduction</span>
+                            </div>
+                        </div>
+                
+                        <button class="case_expand" onclick="expandCase(this)">
+                            View Implementation Process
+                        </button>
+                
+                        <div class="case_details">
+                            <div class="implementation_timeline">
+                                <div class="timeline_item">
+                                    <h4>POS and Inventory Integration</h4>
+                                    <p>The system seamlessly integrates with the restaurant's POS software to continuously monitor sales and ingredient usage.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Predictive Analytics Engine</h4>
+                                    <p>Utilizes machine learning algorithms to analyze historical sales data and predict future inventory requirements with high accuracy.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Automated Supplier Ordering</h4>
+                                    <p>When inventory levels drop below set thresholds, the system automatically generates and sends purchase orders to suppliers, incorporating lead times to ensure timely delivery.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Real-Time Monitoring Dashboard</h4>
+                                    <p>A user-friendly dashboard displays current stock levels, pending orders, and consumption trends, allowing managers to make informed adjustments on the fly.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Feedback Mechanism</h4>
+                                    <p>The system includes a feedback loop where restaurant staff can input data on spoilage and unused stock, which the AI uses to refine its predictions and ordering algorithms.</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        
+                    </div>
+                </article>
+
+                <article class="case_card" data-category="logistics" data-aos="fade-up">
+                    <div class="case_header">
+                    
+                        <div class="case_meta">
+                            <span class="case_category">Logistics and Shipping</span>
+                            <h2 class="case_title">AI-Powered Route Optimization System</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="case_content">
+                        <div class="case_section">
+                            <h3>Problem</h3>
+                            <p>Shipping companies often face challenges with route optimization, leading to inefficient delivery paths, increased fuel consumption, and delayed deliveries. This inefficiency not only increases operational costs but also impacts customer satisfaction due to inconsistent delivery times.</p>
+                        </div>
+                
+                        <div class="case_section">
+                            <h3>Proposed Solution</h3>
+                            <p>We developed a dynamic AI-powered routing system that integrates with existing logistics databases and GPS tracking to optimize delivery routes in real-time. The system analyzes traffic patterns, weather conditions, vehicle load capacity, and delivery urgency to suggest the most efficient routes for drivers. It also features predictive analysis to pre-emptively adjust routes based on expected changes in traffic or weather conditions.</p>
+                        </div>
+                
+                        <div class="case_metrics">
+                            <div class="metric">
+                                <span class="metric_value">30%</span>
+                                <span class="metric_label">Fuel Cost Reduction</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric_value">45%</span>
+                                <span class="metric_label">Faster Deliveries</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric_value">25%</span>
+                                <span class="metric_label">Emissions Reduced</span>
+                            </div>
+                        </div>
+                
+                        <button class="case_expand" onclick="expandCase(this)">
+                            View Implementation Process
+                        </button>
+                
+                        <div class="case_details">
+                            <div class="implementation_timeline">
+                                <div class="timeline_item">
+                                    <h4>Integration with Fleet Management</h4>
+                                    <p>The system connects with the company's fleet management software to access real-time GPS tracking and vehicle status.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Traffic and Weather Data Feeds</h4>
+                                    <p>Continuously pulls data from traffic and weather APIs to update routing decisions as conditions change.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>AI Routing Algorithm</h4>
+                                    <p>Employs machine learning algorithms to learn from past delivery data, optimizing future routes and accounting for variables such as delivery windows and stop sequence.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Dynamic Re-routing Capabilities</h4>
+                                    <p>Automatically suggests alternative routes to drivers in response to unexpected conditions like traffic jams or road closures.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Reporting and Analytics</h4>
+                                    <p>Provides detailed reports on route efficiency, fuel usage, and delivery performance, enabling further refinement of logistics strategies.</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        
+                    </div>
+                </article>
+
+                <article class="case_card" data-category="digital-marketing" data-aos="fade-up">
+                    <div class="case_header">
+                        
+                        <div class="case_meta">
+                            <span class="case_category">Digital Marketing</span>
+                            <h2 class="case_title">AI-Powered Social Media Management System</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="case_content">
+                        <div class="case_section">
+                            <h3>Problem</h3>
+                            <p>Digital marketers are often overwhelmed with the complexities of managing multiple social media platforms, ensuring timely posts, and maintaining a cohesive brand message. The process of planning, creating, scheduling, and posting content can be tedious and time-consuming, often requiring hands-on management and coordination across different time zones and platforms.</p>
+                        </div>
+                
+                        <div class="case_section">
+                            <h3>Proposed Solution</h3>
+                            <p>We introduced an AI-powered automatic content posting system that streamlines the management of social media campaigns. This system utilizes advanced scheduling algorithms and machine learning to analyze engagement data, optimize posting times, and distribute content across various platforms without manual intervention. It also includes features for content variation to adapt messages according to the platform and audience demographics.</p>
+                        </div>
+                
+                        <div class="case_metrics">
+                            <div class="metric">
+                                <span class="metric_value">75%</span>
+                                <span class="metric_label">Time Saved</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric_value">40%</span>
+                                <span class="metric_label">Engagement Increase</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric_value">90%</span>
+                                <span class="metric_label">Automation Rate</span>
+                            </div>
+                        </div>
+                
+                        <button class="case_expand" onclick="expandCase(this)">
+                            View Implementation Process
+                        </button>
+                
+                        <div class="case_details">
+                            <div class="implementation_timeline">
+                                <div class="timeline_item">
+                                    <h4>Content Management</h4>
+                                    <p>The system integrates with a content repository where marketers can preload creative materials such as images, videos, and text templates.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Scheduling Algorithm</h4>
+                                    <p>Uses predictive analytics to schedule posts at optimal times for each social media platform based on audience activity and engagement patterns.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Platform Customization</h4>
+                                    <p>Automatically adapts the format and style of content to fit the specific requirements and best practices of each social media platform.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Real-Time Adjustments</h4>
+                                    <p>AI algorithms monitor real-time performance data to make immediate adjustments to the content schedule, maximizing post effectiveness.</p>
+                                </div>
+                                <div class="timeline_item">
+                                    <h4>Reporting Dashboard</h4>
+                                    <p>Provides a comprehensive dashboard that displays detailed analytics on post performance, audience engagement, and campaign progress.</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </article>
+
+                
+
+            </div>
+
+
+
+
+            
+
+            <!-- Let's Talk Section -->
+            <section class="extraInfo_section">
+                <div class="container">
+                    <div class="extraInfo_content">
+                        <h2 class="section_title title_underline">Ready to Transform Your Business?</h2>
+                        <p class="section_desc" data-aos="fade-up">Let's discuss how our AI solutions can streamline your operations and boost efficiency.</p>
+                        <div class="text-center" data-aos="fade-up" data-aos-delay="50">
+                            <a class="btn btn_primary" href="https://calendly.com/feazibleai">Schedule a Free Consultation</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <style>
+            .extraInfo_section {
+                background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+                padding: 80px 0;
+                position: relative;
+                overflow: hidden;
+                border-radius: 2rem;
+            }
+            
+            .extraInfo_section::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+                opacity: 0.1;
+            }
+            
+            .extraInfo_content {
+                position: relative;
+                z-index: 1;
+                text-align: center;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            
+            .extraInfo_section .section_title {
+                color: #ffffff;
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+            }
+            
+            .extraInfo_section .section_desc {
+                color: #e2e8f0;
+                font-size: 1.2rem;
+                line-height: 1.6;
+                margin-bottom: 2rem;
+                opacity: 0.9;
+            }
+            
+            .extraInfo_section .btn_primary {
+                display: inline-block;
+                padding: 1rem 2rem;
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: #1e3a8a;
+                background: #ffffff;
+                border-radius: 50px;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                border: none;
+            }
+            
+            .extraInfo_section .btn_primary:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                background: #f8fafc;
+            }
+            </style>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container container_lg">
+            <div class="footer_top">
+                <div class="row g-4">
+                    <div class="footer_col_1">
+                        <div class="footer_colContent">
+                            <a class="footer_brand d-inline-block" href="index.html">
+                                <img style="margin-top: -66px; margin-left: -36px; margin-bottom: -66px" class="footer_logo" src="assets/img/logonew.png" alt="feazible ai">
+                            </a>
+                            <p class="fs_14 c_gray">Feazible AI – Empowering businesses with AI-driven automation solutions.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 footer_col_2">
+                        <div class="footer_colContent">
+                            <h2 class="footer_colTitle">Quick Links</h2>
+                            <ul class="footer_nav two-column-list">
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="index.html">Home</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="chatbot-5.html">Book-keeping</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="chatbot.html">AI Chatbot</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="chatbot-4.html">Cross-Platform Sync</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="#">Case studies</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="contact_us.html">Contact Us</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="resources.html">Resources</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 footer_col_3">
+                        <div class="footer_colContent">
+                            <h2 class="footer_colTitle">Contact Us</h2>
+                            <ul class="footer_nav">
+                                <li class="footer_navItem">
+                                    Phone: <a class="footer_navLink" href="tel:+447982145739">+44 7982 145 739</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    Email: <a class="footer_navLink" href="mailto:CEO@feazible.ai">CEO@feazible.ai</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 footer_col_4">
+                        <div class="footer_colContent">
+                            <h2 class="footer_colTitle">Follow Us</h2>
+                            <ul class="footer_nav footer_social_nav">
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="https://www.facebook.com/share/1AqGZzyk4V/?mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="https://x.com/FeazibleAi" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="https://www.linkedin.com/company/feazibleai" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="https://www.instagram.com/feazibleAI" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <span>&copy; 2024 Feazible AI. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/case-studies.js"></script>
+    <script>
+        VANTA.NET({
+            el: "#vanta_bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3182ce,
+            backgroundColor: 0x0f2238,
+            points: 15.00,
+            maxDistance: 25.00,
+            spacing: 16.00
+        });
+    </script>
+
+    <style>
+        /* Base styling for the VANTA section */
+        #vanta_bg {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        /* Add a gradient overlay */
+        #vanta_bg::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(15, 34, 56, 0) 70%, #000515 100%);
+            z-index: 1; /* Ensures the gradient is above the VANTA canvas */
+            pointer-events: none; /* Ensures it doesn't block interactions */
+        }
+    
+        /* Ensure content stays visible */
+        .hero_content {
+            position: relative;
+            z-index: 2; /* Content above both VANTA and gradient */
+            text-align: center;
+            color: white;
+        }
+    </style>
+
+</body>
+</html>
