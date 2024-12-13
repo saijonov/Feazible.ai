@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -49,12 +50,12 @@
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link active" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Solutions
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
                                 <li><a class="dropdown-item" href="book-keeping.html">Book-keeping</a></li>
-                                <li><a class="dropdown-item active" href="chatbot.html">AI Chatbot</a></li>
+                                <li><a class="dropdown-item" href="chatbot.html">AI Chatbot</a></li>
                                 <li><a class="dropdown-item" href="data-sync.html">Cross-Platform Sync</a></li>
                             </ul>
                         </li>
@@ -79,45 +80,56 @@
             </nav>
         </div>
     </header>
+    
     <!-- __________________ end header area  __________________ -->
 
     <!-- __________________ start main area  __________________ -->
     <main class="main">
 
         <!-- ... start hero section ... -->
-        <section class="hero_section2">
-            <div class="container container_lg">
+        <section class="hero_section">
+            <div class="container">
                 <div class="row gy-4">
-                    <div class="col-lg-7">
+                    <div class="col-lg-6">
                         <div class="hero_content">
-                            <h1 class="hero_title">Customer Support That's Always Accurate, Always Available</h1>
-                            <p class="hero_desc" data-aos="fade-up">Custom AI chatbots tailored to your business, providing instant, error-free support <br class="sm_none"> for your customers—24/7.</p>
+                            <h1 class="hero_title">Unify Your Data, Simplify Your Business</h1>
+                            <p class="hero_desc" data-aos="fade-up">Integrate and harmonize data across all your platforms with custom AI solutions—no more manual work or mismatched records.</p>
                             <div data-aos="fade-up" data-aos-delay="100">
                                 <a class="btn btn_primary lets-talk-button" href="https://calendly.com/feazibleai">Let's talk</a>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero_imgBox" data-aos="fade-in">
+                            <img class="hero_img img-fluid" src="assets/img/home/hero-img.webp" alt="hero">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- ... end hero section ... -->
-
         <!-- ... start intro section ... -->
         <section class="intro_section">
             <div class="container">
-                <div class="row gy-4 align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-lg-6 order-2 order-lg-1">
+                <div class="row gy-4 align-items-cente justify-content-between">
+                    <div class="col-lg-6 order-2 order-lg-2">
                         <div class="intro_content">
-                            <h2 class="section_title">Customer Support Challenges Slowing You Down?</h2>
-                            <p class="section_desc" data-aos="fade-up">Customers expect instant, accurate responses—every time they reach out. But relying solely on human support can lead to delays, errors, and high staffing costs. Our custom AI chatbots are designed to learn your business inside and out, providing the same quality of support as your best team member, with zero mistakes and instant responses.</p>
+                            <h2 class="section_title">Frustrated with Mismatched Data?</h2>
+                            <p class="section_desc" data-aos="fade-up">Managing data across multiple platforms can feel like a never-ending hassle. Different tools export data with different labels—one calls it 'customer,' another calls it 'client,' while dates, currencies, and product names vary across platforms. This leaves you with exports that don’t align, forcing you to manually adjust columns and reformat data just to get a consistent report. It’s time-consuming, frustrating, and takes focus away from growing your business.</p>
                             <div data-aos="fade-up">
-                                <a class="btn btn_primary lets-talk-button" href="https://calendly.com/feazibleai">Let's talk</a>
+                                <a 
+                                    class="btn btn_primary lets-talk-button" 
+                                    href="https://calendly.com/feazibleai" 
+                                    style="">
+                                    Let us help you
+                                </a>
+
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-8 col-md-7 col-lg-5 order-1 order-lg-2">
-                        <div class="intro_imgBox2" data-aos="zoom-in">
-                            <img class="img-fluid w-100" src="assets/img/chatbot/ai-chat.webp" alt="intro" loading="lazy">
+                    <div class="col-lg-5 order-1 order-lg-1">
+                        <div class="intro_imgBox" data-aos="fade-in">
+                            <img class="img-fluid w-100" src="assets/img/home/intro.webp" alt="intro" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -125,224 +137,283 @@
         </section>
         <!-- ... end intro section ... -->
 
-        <!-- ... start why ai chatbot. section ... -->
-        <section class="wac_section">
-            <div class="container">
-                <div class="wac_content">
-                    <h2 class="section_title title_underline">Why AI Chatbots Are the Future of Customer Support?</h2>
-                    
-                    <div class="wac_items">
-                        <div class="wac_item">
-                            <div class="wac_itemBox" data-aos="fade-left" data-aos-delay="100">
-                                <div class="wac_itemIconBox">
-                                    <div class="wac_itemIcon">
-                                        <img src="assets/img/chatbot/icon-targeting.webp" alt="targeting">
-                                    </div>
-                                </div>
-                                <div class="wac_itemContent">
-                                    <div class="wac_itemNum">01</div>
-                                    <h3 class="wac_itemTitle">Accuracy Without Human Error</h3>
-                                    <p class="wac_itemDesc">Our AI chatbots learn to provide support just like a human would—but without the mistakes. By training the chatbot on your specific industry language, product details, and common questions, it delivers accurate answers every time, ensuring a consistent customer experience.</p>
-                                </div>
-                            </div>
+        <!-- ... start Challenges section ... -->
+        <section class="challenges_section">
+            <div class="container container_sm">
+                <div class="challenges_content">
+                    <h2 class="section_title title_underline">One Solution for All Your Data Challenges</h2>
+                    <p class="section_desc" data-aos="fade-up">Our AI-powered solution automatically harmonizes data from all your tools, no matter the format or structure. We bridge the gaps between systems like CRMs, payment processors, e-commerce platforms, and more, making your data work together seamlessly.</p>
+                    <div class="row">
+                        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                            <ul class="challenges_list">
+                                <li>Completely removes the need for manual data entry</li>
+                                <li>Custom data mapping to fit your business needs</li>
+                                <li>Integrates with any software</li>
+                            </ul>
                         </div>
-                        <div class="wac_item">
-                            <div class="wac_itemBox" data-aos="fade-right" data-aos-delay="200">
-                                <div class="wac_itemIconBox">
-                                    <div class="wac_itemIcon">
-                                        <img src="assets/img/chatbot/icon-integration.webp" alt="integration">
-                                    </div>
-                                </div>
-                                <div class="wac_itemContent">
-                                    <div class="wac_itemNum">02</div>
-                                    <h3 class="wac_itemTitle">Integration with Your Systems</h3>
-                                    <p class="wac_itemDesc">Our chatbots integrate directly with your CRM, helpdesk, or any internal databases, allowing it to access real-time information. Whether it’s pulling up a customer's order history or accessing specific product details, the AI ensures your customers get precise answers instantly.</p>
-                                </div>
-                            </div>
+                        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                            <ul class="challenges_list">
+                                <li>Ensures accurate and consistent data across all your platforms</li>
+                                <li>Reduces manual data entry and eliminates errors</li>
+                                <li>Automates real-time updates between systems</li>
+                            </ul>
                         </div>
-                        <div class="wac_item">
-                            <div class="wac_itemBox" data-aos="fade-left" data-aos-delay="300">
-                                <div class="wac_itemIconBox">
-                                    <div class="wac_itemIcon">
-                                        <img src="assets/img/chatbot/icon-encryption.webp" alt="encryption">
-                                    </div>
-                                </div>
-                                <div class="wac_itemContent">
-                                    <div class="wac_itemNum">03</div>
-                                    <h3 class="wac_itemTitle">Data Privacy and Security</h3>
-                                    <p class="wac_itemDesc">We know privacy is critical. Our AI runs on secure servers, and all customer data is encrypted during storage and transmission. We also set up multi-step verification processes to ensure customers are who they claim to be, using techniques like one-time passwords (OTP), security questions, or biometric authentication, based on your preferences.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wac_item">
-                            <div class="wac_itemBox" data-aos="fade-right" data-aos-delay="400">
-                                <div class="wac_itemIconBox">
-                                    <div class="wac_itemIcon">
-                                        <img src="assets/img/chatbot/icon-24-hours.webp" alt="24-hours">
-                                    </div>
-                                </div>
-                                <div class="wac_itemContent">
-                                    <div class="wac_itemNum">04</div>
-                                    <h3 class="wac_itemTitle">24/7 Availability</h3>
-                                    <p class="wac_itemDesc">While human agents need breaks, our AI chatbot is available around the clock. It can handle inquiries at any hour, ensuring your customers are never left waiting—no matter the time zone.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wac_item">
-                            <div class="wac_itemBox" data-aos="fade-left" data-aos-delay="500">
-                                <div class="wac_itemIconBox">
-                                    <div class="wac_itemIcon">
-                                        <img src="assets/img/chatbot/icon-idea.webp" alt="idea">
-                                    </div>
-                                </div>
-                                <div class="wac_itemContent">
-                                    <div class="wac_itemNum">05</div>
-                                    <h3 class="wac_itemTitle">Cost-Effective Solution</h3>
-                                    <p class="wac_itemDesc">Hiring and training human support agents is expensive, and turnover can add to the costs. A custom AI chatbot requires only an initial setup, drastically reducing ongoing expenses. It’s like having an unlimited number of support agents, without the payroll.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wac_item">
-                            <div class="wac_itemBox" data-aos="fade-right" data-aos-delay="600">
-                                <div class="wac_itemIconBox">
-                                    <div class="wac_itemIcon">
-                                        <img src="assets/img/chatbot/icon-response.webp" alt="response">
-                                    </div>
-                                </div>
-                                <div class="wac_itemContent">
-                                    <div class="wac_itemNum">06</div>
-                                    <h3 class="wac_itemTitle">Lightning-Fast Response Times</h3>
-                                    <p class="wac_itemDesc">Where human agents might take minutes to respond, our chatbots reply in seconds, even during high traffic times. This means more satisfied customers and less frustration from long wait times.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="text-center">
-                        <a class="btn btn_primary lets-talk-button" href="https://calendly.com/feazibleai">Let's talk</a>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- ... end why ai chatbot. section ... -->
+        <!-- ... end Challenges section ... -->
+
+        <!-- ... start Platform section ... -->
+        <section class="platform_section">
+            <div class="container">
+                <div class="platform_content">
+                    <h2 class="section_title title_underline">Platform Compatibility list examples</h2>
+                    <div class="row platform_list">
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-in" data-aos-delay="0">
+                            <div class="platform_item">
+                                <img class="platform_logo" src="assets/img/home/Salesforce.webp" alt="Salesforce" loading="lazy">
+                                <div class="platform_name">Salesforce</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-in" data-aos-delay="100">
+                            <div class="platform_item">
+                                <img class="platform_logo" src="assets/img/home/HubSpot.webp" alt="HubSpot" loading="lazy">
+                                <div class="platform_name">HubSpot</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-in" data-aos-delay="150">
+                            <div class="platform_item">
+                                <img class="platform_logo" src="assets/img/home/ZohoCRM.webp" alt="Zoho CRM" loading="lazy">
+                                <div class="platform_name">Zoho CRM</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-in" data-aos-delay="200">
+                            <div class="platform_item">
+                                <img class="platform_logo" src="assets/img/home/Stripe.webp" alt="Stripe" loading="lazy">
+                                <div class="platform_name">Stripe</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-in" data-aos-delay="250">
+                            <div class="platform_item">
+                                <img class="platform_logo" src="assets/img/home/PayPal.webp" alt="PayPal" loading="lazy">
+                                <div class="platform_name">PayPal</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-in" data-aos-delay="300">
+                            <div class="platform_item">
+                                <img class="platform_logo" src="assets/img/home/Square.webp" alt="Square" loading="lazy">
+                                <div class="platform_name">Square</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-in" data-aos-delay="350">
+                            <div class="platform_item">
+                                <img class="platform_logo" src="assets/img/home/Shopify.webp" alt="Shopify" loading="lazy">
+                                <div class="platform_name">Shopify</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-in" data-aos-delay="400">
+                            <div class="platform_item">
+                                <img class="platform_logo" src="assets/img/home/WooCommerce.webp" alt="Woo Commerce" loading="lazy">
+                                <div class="platform_name">Woo Commerce</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-in" data-aos-delay="450">
+                            <div class="platform_item">
+                                <img class="platform_logo" src="assets/img/home/Magento.webp" alt="Magento" loading="lazy">
+                                <div class="platform_name">Magento</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-in" data-aos-delay="500">
+                            <div class="platform_item">
+                                <img class="platform_logo" src="assets/img/home/GoogleAnalytics.webp" alt="Google Analytics" loading="lazy">
+                                <div class="platform_name">Google Analytics</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-in" data-aos-delay="550">
+                            <div class="platform_item">
+                                <img class="platform_logo" src="assets/img/home/PowerBI.webp" alt="Power BI" loading="lazy">
+                                <div class="platform_name">Power BI</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-in" data-aos-delay="600">
+                            <div class="platform_item">
+                                <img class="platform_logo" src="assets/img/home/Tableau.webp" alt="Tableau" loading="lazy">
+                                <div class="platform_name">Tableau</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="text-center" data-aos="fade-up">
+                        <div class="fs_20 c_white mb-4" style="margin-bottom: -25%; font-size: 40px;">+ over 10,000 additional platforms</div>
+                        <div>
+                            <a 
+                                class="btn btn_primary lets-talk-button" 
+                                href="https://calendly.com/feazibleai" 
+                                style="">
+                                Let's talk
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ... end Platform section ... -->
 
         <!-- ... start how it works section ... -->
-        <section class="hiw_section">
+        <section class="process_section">
             <div class="container">
-                <div class="hiw_content">
+                <div class="process_content">
                     <h2 class="section_title title_underline">how it works</h2>
-                    <div class="row hiw_list">
-                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                            <div class="hiw_item">
-                                <h3 class="hiw_title">Understand & Analyze</h3>
-                                <p class="hiw_desc">
-                                    We start by understanding your unique bookkeeping challenges and reviewing the applications you currently use. <br><br>
-                                    From there, we map out the data flow between your systems, ensuring no detail is overlooked.
-                                </p>
-                                <div class="hiw_itemNum">
-                                    <span>01</span>
+                    <div class="process_steps">
+
+                        <div class="process_step row">
+                            <div class="col-md-6" data-aos="fade-left">
+                                <div class="process_stepContent">
+                                    <div class="process_number">01</div>
+                                    <h3 class="process_title">Understand & Analyze</h3>
+                                    <ul class="process_infoList">
+                                        <li>We start by understanding your unique bookkeeping challenges and reviewing the applications you currently use.</li>
+                                        <li>From there, we map out the data flow between your systems, ensuring no detail is overlooked.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-5" data-aos="zoom-out">
+                                <div class="process_stepImgBox">
+                                    <img class="process_stepImg img-fluid" src="assets/img/home/process_1.webp" alt="process" loading="lazy">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
-                            <div class="hiw_item">
-                                <h3 class="hiw_title">Build & Train</h3>
-                                <p class="hiw_desc">
-                                    We create custom code that integrates all your applications, using advanced techniques like Retrieval-Augmented Generation (RAG), vector embeddings, and API integration. <br><br>
-                                    With these methods, we teach the AI to understand your specific needs, ensuring it formats and processes data exactly the way you want.<br><br>
-                                    Your data remains secure throughout, hosted on encrypted servers to protect sensitive information.
-                                </p>
-                                <div class="hiw_itemNum">
-                                    <span>02</span>
+
+                        <div class="process_step row">
+                            <div class="col-md-6" data-aos="fade-right">
+                                <div class="process_stepContent">
+                                    <div class="process_number">02</div>
+                                    <h3 class="process_title">Build & Train</h3>
+                                    <ul class="process_infoList">
+                                        <li>We create custom code that integrates all your applications, using advanced techniques like Retrieval-Augmented Generation (RAG), vector embeddings, and API integration.</li>
+                                        <li>With these methods, we teach the AI to understand your specific needs, ensuring it formats and processes data exactly the way you want.</li>
+                                        <li>Your data remains secure throughout, hosted on encrypted servers to protect sensitive information.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-5" data-aos="zoom-out">
+                                <div class="process_stepImgBox">
+                                    <img class="process_stepImg img-fluid" src="assets/img/home/process_2.webp" alt="process" loading="lazy">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                            <div class="hiw_item">
-                                <h3 class="hiw_title">Deploy & Integrate</h3>
-                                <p class="hiw_desc">
-                                    Once trained, we integrate the AI with your system, either directly into your existing software or through a user-friendly interface we provide. <br><br>
-                                    Choose to let us manage the back end, or use your own site to access and upload files—it's completely up to you.
-                                </p>
-                                <div class="hiw_itemNum">
-                                    <span>03</span>
+
+                        <div class="process_step row">
+                            <div class="col-md-6" data-aos="fade-left">
+                                <div class="process_stepContent">
+                                    <div class="process_number">03</div>
+                                    <h3 class="process_title">Deploy & Integrate</h3>
+                                    <ul class="process_infoList">
+                                        <li>Once trained, we integrate the AI with your system, either directly into your existing software or through a user-friendly interface we provide.</li>
+                                        <li>Choose to let us manage the back end, or use your own site to access and upload files—it's completely up to you.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-5" data-aos="zoom-out">
+                                <div class="process_stepImgBox">
+                                    <img class="process_stepImg img-fluid" src="assets/img/home/process_3.webp" alt="process" loading="lazy">
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="text-center">
-                        <a class="btn btn_primary lets-talk-button" href="https://calendly.com/feazibleai">Let's talk</a>
+                        <a 
+                                class="btn btn_primary lets-talk-button" 
+                                href="https://calendly.com/feazibleai" 
+                                style="">
+                                Let's talk
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- ... end how it works section ... -->
 
-        <!-- ... start Why Our Chatbots Stand Out section ... -->
-        <section class="woc_section">
+        <!-- ... start Why Choose Our AI-Powered Data Harmonization? section ... -->
+        <section class="reason_section">
             <div class="container">
-                <div class="woc_content">
-                    <h2 class="section_title title_underline">Why Our Chatbots Stand Out</h2>
-                    
-                    <div class="woc_items">
-                        <div class="woc_item">
-                            <div class="woc_itemBox" data-aos="fade-left" data-aos-delay="100">
-                                <div class="woc_itemContent">
-                                    <h3 class="woc_itemTitle">Human-Like Conversations</h3>
-                                    <p class="woc_itemDesc">Our AI understands context, making conversations feel natural and engaging, rather than robotic</p>
-                                </div>
+                <div class="reason_content">
+                    <h2 class="section_title title_underline">Why Choose Our AI-Powered Data Harmonization?</h2>
+                    <div class="row reason_list">
+                        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                            <div class="reason_item">
+                                <img class="reason_icon" src="assets/img/home/icon-1.webp" alt="icon" loading="lazy">
+                                <h3 class="reason_title">Custom Data Mapping</h3>
+                                <p class="reason_desc">Aligns fields like 'customer' in your CRM with 'client' in your accounting software, ensuring a consistent view.</p>
                             </div>
                         </div>
-                        <div class="woc_item">
-                            <div class="woc_itemBox" data-aos="fade-right" data-aos-delay="200">
-                                <div class="woc_itemContent">
-                                    <h3 class="woc_itemTitle">Multi-Channel Support</h3>
-                                    <p class="woc_itemDesc">Deploy your chatbot on your website, mobile app, social media, or messaging platforms, ensuring customers can reach you wherever they are.</p>
-                                </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                            <div class="reason_item">
+                                <img class="reason_icon" src="assets/img/home/icon-2.webp" alt="icon" loading="lazy">
+                                <h3 class="reason_title">Handles Complex Data Structures</h3>
+                                <p class="reason_desc">From multi-location sales data to diverse payment plans, our AI adapts to your specific needs.</p>
                             </div>
                         </div>
-                        <div class="woc_item">
-                            <div class="woc_itemBox" data-aos="fade-left" data-aos-delay="300">
-                                <div class="woc_itemContent">
-                                    <h3 class="woc_itemTitle">Advanced Security Protocols</h3>
-                                    <p class="woc_itemDesc">From two-factor authentication to encrypted data storage, we ensure that every customer interaction is secure</p>
-                                </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                            <div class="reason_item">
+                                <img class="reason_icon" src="assets/img/home/icon-3.webp" alt="icon" loading="lazy">
+                                <h3 class="reason_title">Real-Time Data Sync</h3>
+                                <p class="reason_desc">Automate updates between all your platforms, so your data is always up-to-date</p>
                             </div>
                         </div>
-                        <div class="woc_item">
-                            <div class="woc_itemBox" data-aos="fade-right" data-aos-delay="400">
-                                <div class="woc_itemContent">
-                                    <h3 class="woc_itemTitle">Real-Time Data Access</h3>
-                                    <p class="woc_itemDesc">Pulls up-to-date customer information instantly from your internal systems, so responses are always accurate.</p>
-                                </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="250">
+                            <div class="reason_item">
+                                <img class="reason_icon" src="assets/img/home/icon-4.webp" alt="icon" loading="lazy">
+                                <h3 class="reason_title">Reduces Manual Work</h3>
+                                <p class="reason_desc">Eliminates the need to manually export, adjust, and import data, freeing up your team's time.</p>
                             </div>
                         </div>
-                        <div class="woc_item">
-                            <div class="woc_itemBox" data-aos="fade-left" data-aos-delay="500">
-                                <div class="woc_itemContent">
-                                    <h3 class="woc_itemTitle">Continuous Learning</h3>
-                                    <p class="woc_itemDesc">The chatbot evolves over time, learning from interactions to improve its responses and provide even better support.</p>
-                                </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                            <div class="reason_item">
+                                <img class="reason_icon" src="assets/img/home/icon-5.webp" alt="icon" loading="lazy">
+                                <h3 class="reason_title">Scalable for Growth</h3>
+                                <p class="reason_desc">Whether you're a startup or an enterprise, our solution grows with you, handling increased data volume effortlessly.</p>
                             </div>
                         </div>
-                        <div class="woc_item">
-                            <div class="woc_itemBox" data-aos="fade-right" data-aos-delay="600">
-                                <div class="woc_itemContent">
-                                    <h3 class="woc_itemTitle">Scalable Solutions</h3>
-                                    <p class="woc_itemDesc">Whether you need support for a small team or a large enterprise, our AI adapts to your needs and scales effortlessly as your business grows.</p>
-                                </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="350">
+                            <div class="reason_item">
+                                <img class="reason_icon" src="assets/img/home/icon-6.webp" alt="icon" loading="lazy">
+                                <h3 class="reason_title">24/7 Support During Setup</h3>
+                                <p class="reason_desc">Our team is available around the clock during the first two months to ensure a smooth transition.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                            <div class="reason_item">
+                                <img class="reason_icon" src="assets/img/home/icon-7.webp" alt="icon" loading="lazy">
+                                <h3 class="reason_title">Secure Data Handling</h3>
+                                <p class="reason_desc">Where needed, All data is encrypted and stored on secure servers, meeting industry standards for privacy</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="450">
+                            <div class="reason_item">
+                                <img class="reason_icon" src="assets/img/home/icon-8.webp" alt="icon" loading="lazy">
+                                <h3 class="reason_title">Advanced AI Techniques</h3>
+                                <p class="reason_desc">Uses machine learning, natural language processing, and more to adapt to your specific data challenges.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="text-center">
-                        <a class="btn btn_primary lets-talk-button" href="https://calendly.com/feazibleai">Let's talk</a>
+                        <a 
+                                class="btn btn_primary lets-talk-button" 
+                                href="https://calendly.com/feazibleai" 
+                                style="">
+                                Let's talk
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- ... end Why Our Chatbots Stand Out section ... -->
+        <!-- ... end Why Choose Our AI-Powered Data Harmonization? section ... -->
 
         <!-- ... start What Our Clients Say section ... -->
         <section class="feedback_section">
@@ -455,6 +526,7 @@
                 </div>
             </div>
         </section>
+        
         <!-- ... end What Our Clients Say section ... -->
 
         <!-- ... start Case Study section ... -->
@@ -464,79 +536,84 @@
                     <h2 class="section_title title_underline">Case Study: Streamlining Data Integration for a Growing E-Commerce Business</h2>
                     <div class="row g-4 g-xl-5">
                         <div class="col-md-6" data-aos="fade-left">
-                            <div class="mb-5">
+                            <div>
                                 <h3 class="caseStudy_title border_left">Client Background</h3>
-                                <p class="caseStudy_desc">A financial services firm needed a better way to manage customer inquiries, which ranged from basic account questions to detailed explanations about loans and investments</p>
+                                <p class="caseStudy_desc">Our client, an e-commerce business, operated through multiple channels, selling products online through Shopify and Amazon, while also using a custom-built CRM to manage customer relationships and Stripe for handling payments</p>
                             </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-left" data-aos-delay="50">
+                            <div>
+                                <h3 class="caseStudy_title border_left">Our Solution</h3>
+                                <p class="caseStudy_desc">We developed a custom AI-powered integration that harmonized data from all their platforms, automatically mapping and aligning different data fields.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
                             <div>
                                 <h3 class="caseStudy_title border_left">The Problem</h3>
                                 <div class="caseStudy_desc">
                                     <ul>
                                         <li>
-                                            Inconsistent Answers: Their previous chatbot often gave incorrect responses, struggling with industry-specific terms.
+                                            Mismatched Data Exports: Each platform labeled and structured data differently.
                                         </li>
                                         <li>
-                                            Complex Questions: Many customer queries were detailed, like “What are the benefits of early loan repayment?” that the chatbot couldn't handle.
+                                            Manual Data Adjustments: The client's team had to manually import and reformat data from each platform.
                                         </li>
                                         <li>
-                                            Integration Issues: Customer data was spread across different systems, making it difficult for the bot to provide accurate, personalized answers.
-                                        </li>
-                                        <li>
-                                            High Support Costs: Human agents were overwhelmed, leading to long wait times and high staffing costs.
+                                            Inconsistent Reporting: Manual adjustments often led to errors in reports.
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6" data-aos="fade-left" data-aos-delay="50">
-                            <div class="mb-5">
-                                <h3 class="caseStudy_title border_left">Our Solution</h3>
-                                <p class="caseStudy_desc">We created a custom AI chatbot that:</p>
-                                <div class="caseStudy_desc">
-                                    <ul>
-                                        <li>
-                                            Learned Industry-Specific Knowledge: The AI was trained to understand the firm’s terminology, providing accurate answers every time.
-                                        </li>
-                                        <li>
-                                            Handled Complex Queries: Advanced AI techniques enabled the bot to answer detailed questions and seamlessly escalate issues to human agents when necessary.
-                                        </li>
-                                        <li>
-                                            Integrated with Internal Systems: The chatbot accessed real-time customer data, delivering accurate, personalized responses without manual lookups.
-                                        </li>
-                                        <li>
-                                            Enhanced Security: We implemented data encryption and multi-step verification to ensure privacy.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="col-md-6" data-aos="fade-left" data-aos-delay="150">
                             <div>
                                 <h3 class="caseStudy_title border_left">Results</h3>
                                 <div class="caseStudy_desc">
                                     <ul>
                                         <li>
-                                            Improved Customer Satisfaction: Instant, accurate responses led to happier clients.
+                                            Eliminated Manual Adjustments: Saved the client's team hours of manual work each week.
                                         </li>
                                         <li>
-                                            Reduced Workload: The AI handled 80% of routine inquiries, freeing up human agents for complex cases.
+                                            Accurate, Real-Time Reports: Consistent data flow between platforms led to accurate reports.
                                         </li>
                                         <li>
-                                            Cost Savings: The firm cut down on overtime and staffing needs while providing 24/7 support.
+                                            Better Focus on Growth: Freed from data management headaches, the client could focus on expanding their business.
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
         </section>
         <!-- ... end Case Study section ... -->
 
+        <!-- ... start Ready to Connect.. section ... -->
+        <section class="extraInfo_section">
+            <div class="container container_sm">
+                <div class="extraInfo_content">
+                    <h2 class="section_title">Ready to Connect All Your Data?</h2>
+                    <p class="section_desc" data-aos="fade-up">Discover how our AI can make your data work together seamlessly—no more data headaches.</p>
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="50">
+                        <a 
+                                class="btn btn_warning" 
+                                href="https://calendly.com/feazibleai" 
+                                style="">
+                                Let's talk
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ... end Ready to Connect.. section ... -->
+
         <!-- ... start faq section ... -->
         <section class="faq_section">
             <div class="container">
                 <div class="faq_content">
-                    <h2 class="section_title title_underline">Frequently Asked Questions</h2>
+                    <h2 class="section_title title_underline">Answers to the most frequently asked questions</h2>
                     <p class="section_subtitle">Answers to the most frequently asked questions.</p>
                     
 
@@ -550,7 +627,7 @@
                             </h3>
                             <div id="faq-collapse_1" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
                                 <div class="accordion-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ipsa alias quia libero, exercitationem excepturi! In voluptatem amet saepe quia consectetur ex voluptatibus doloremque ab veritatis nemo, architecto distinctio accusamus!</p>
+                                    <p>We train the AI using data specific to your business, including product details, industry terms, and common customer questions.</p>
                                 </div>
                             </div>
                         </div>
@@ -558,12 +635,12 @@
                             <h3 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#faq-collapse_2" aria-expanded="false" aria-controls="faq-collapse_2">
-                                    How do you keep customer data safe?"
+                                    How do you keep customer data safe?
                                 </button>
                             </h3>
                             <div id="faq-collapse_2" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
                                 <div class="accordion-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ipsa alias quia libero, exercitationem excepturi! In voluptatem amet saepe quia consectetur ex voluptatibus doloremque ab veritatis nemo, architecto distinctio accusamus!</p>
+                                    <p>All data is encrypted, and we use advanced security measures like two-factor authentication to protect sensitive information.</p>
                                 </div>
                             </div>
                         </div>
@@ -576,7 +653,7 @@
                             </h2>
                             <div id="faq-collapse_3" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
                                 <div class="accordion-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ipsa alias quia libero, exercitationem excepturi! In voluptatem amet saepe quia consectetur ex voluptatibus doloremque ab veritatis nemo, architecto distinctio accusamus!</p>
+                                    <p>Yes, our chatbots are designed to understand and process complex questions, providing accurate and detailed responses instantly.</p>
                                 </div>
                             </div>
                         </div>
@@ -589,7 +666,7 @@
                             </h2>
                             <div id="faq-collapse_4" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
                                 <div class="accordion-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ipsa alias quia libero, exercitationem excepturi! In voluptatem amet saepe quia consectetur ex voluptatibus doloremque ab veritatis nemo, architecto distinctio accusamus!</p>
+                                    <p>No, we handle the setup and integration for you, so you can start using the chatbot without any technical knowledge.</p>
                                 </div>
                             </div>
                         </div>
@@ -602,7 +679,7 @@
                             </h2>
                             <div id="faq-collapse_5" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
                                 <div class="accordion-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ipsa alias quia libero, exercitationem excepturi! In voluptatem amet saepe quia consectetur ex voluptatibus doloremque ab veritatis nemo, architecto distinctio accusamus!</p>
+                                    <p>All chat data is stored on secure, encrypted servers to ensure that your customers' information remains private. We comply with industry standards for data security and can adjust storage locations based on your specific requirements, such as using local data centers if needed.</p>
                                 </div>
                             </div>
                         </div>
@@ -615,62 +692,67 @@
                             </h2>
                             <div id="faq-collapse_6" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
                                 <div class="accordion-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ipsa alias quia libero, exercitationem excepturi! In voluptatem amet saepe quia consectetur ex voluptatibus doloremque ab veritatis nemo, architecto distinctio accusamus!</p>
+                                    <p>No, our chatbots are designed to operate efficiently without impacting your website’s speed. The AI processes data in the background, ensuring that your site continues to run smoothly for all visitors.</p>
                                 </div>
                             </div>
                         </div>
+
                         <div class="accordion-item">
                             <h3 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-collapse_7" aria-expanded="false" aria-controls="faq-collapse_7">
+                                    data-bs-target="#faq-collapse_7" aria-expanded="false" aria-controls="faq-collapse_6">
                                     What happens if the chatbot can't answer a question?
                                 </button>
                             </h2>
                             <div id="faq-collapse_7" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
                                 <div class="accordion-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ipsa alias quia libero, exercitationem excepturi! In voluptatem amet saepe quia consectetur ex voluptatibus doloremque ab veritatis nemo, architecto distinctio accusamus!</p>
+                                    <p>While it's very rare for our AI to encounter a question it can’t handle, we have a process in place for those situations. If the chatbot is unable to answer a query, it will automatically open a support case and notify your team about the question. Your team can then respond directly to the customer via email. The best part? The AI learns from these interactions, so the more it encounters challenging questions, the better it gets at answering them in the future.</p>
                                 </div>
                             </div>
                         </div>
+
                         <div class="accordion-item">
                             <h3 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-collapse_8" aria-expanded="false" aria-controls="faq-collapse_8">
+                                    data-bs-target="#faq-collapse_8" aria-expanded="false" aria-controls="faq-collapse_6">
                                     Can the chatbot understand industry-specific terms?
                                 </button>
                             </h2>
                             <div id="faq-collapse_8" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
                                 <div class="accordion-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ipsa alias quia libero, exercitationem excepturi! In voluptatem amet saepe quia consectetur ex voluptatibus doloremque ab veritatis nemo, architecto distinctio accusamus!</p>
+                                    <p>Yes, our AI can be trained to understand the unique terminology and phrases used in your industry. This ensures that the chatbot delivers accurate, context-aware responses, providing a more personalized experience for your customers.</p>
                                 </div>
                             </div>
                         </div>
+
                         <div class="accordion-item">
                             <h3 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-collapse_9" aria-expanded="false" aria-controls="faq-collapse_9">
+                                    data-bs-target="#faq-collapse_9" aria-expanded="false" aria-controls="faq-collapse_6">
                                     Can the chatbot handle multiple languages?
                                 </button>
                             </h2>
                             <div id="faq-collapse_9" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
                                 <div class="accordion-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ipsa alias quia libero, exercitationem excepturi! In voluptatem amet saepe quia consectetur ex voluptatibus doloremque ab veritatis nemo, architecto distinctio accusamus!</p>
+                                    <p>Yes, our AI can be configured to understand and respond in multiple languages, making it ideal for businesses with diverse customer bases. We can train the chatbot in the languages that matter most to your business.</p>
                                 </div>
                             </div>
                         </div>
+
                         <div class="accordion-item">
                             <h3 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-collapse_10" aria-expanded="false" aria-controls="faq-collapse_10">
+                                    data-bs-target="#faq-collapse_10" aria-expanded="false" aria-controls="faq-collapse_6">
                                     Can I customize the chatbot’s responses?
                                 </button>
                             </h2>
                             <div id="faq-collapse_10" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
                                 <div class="accordion-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ipsa alias quia libero, exercitationem excepturi! In voluptatem amet saepe quia consectetur ex voluptatibus doloremque ab veritatis nemo, architecto distinctio accusamus!</p>
+                                    <p>Absolutely! We work with you to tailor the chatbot’s responses to match your brand’s tone and the specific needs of your customers. This ensures that your chatbot feels like a natural extension of your customer service team.</p>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
                     <div class="text-center">
