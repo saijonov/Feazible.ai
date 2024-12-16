@@ -247,7 +247,7 @@
                             <div style="flex-grow: 1;">
                                 <h3 style="margin: 0; font-size: 1.5rem;">Want to see Feazible AI in action?</h3>
                                 <p style="margin: 0.5rem 0;">Schedule a personalized demo with our team</p>
-                                <a href="https://calendly.com/feazibleai" target="_blank" class="btn-demo" style="display: inline-block; padding: 0.5rem 1rem; background-color: #007BFF; color: #fff; text-decoration: none; border-radius: 4px; font-weight: bold;">
+                                <a href="https://calendly.com/feazibleai" target="_blank" class="btn-demo lets-talk-button" style="display: inline-block; padding: 0.5rem 1rem; background-color: #007BFF; color: #fff; text-decoration: none; border-radius: 4px; font-weight: bold;">
                                     Book A Call
                                 </a>
                             </div>
@@ -340,7 +340,7 @@
                                     </div>
                                 </div>
 
-                                <button type="submit" class="btn btn_primary submit-request-btn w-100">Submit Request</button>
+                                <button type="submit" class="btn btn_primary submit-request-btn w-100 lets-talk-buttonss">Submit Request</button>
                             </form>
                         </div>
 
@@ -349,6 +349,7 @@
                 </div>
             </div>
         </section>
+        
     </main>
     <!-- __________________ end main area  __________________ -->
 
@@ -426,7 +427,7 @@
                                     <a class="footer_navLink" href="https://x.com/FeazibleAi" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
                                 </li>
                                 <li class="footer_navItem">
-                                    <a class="footer_navLink" href="https://www.facebook.com/share/1AqGZzyk4V/?mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a class="footer_navLink" href="https://uk.linkedin.com/in/titas-j-ba8b1b122" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                                 </li>
                                 <li class="footer_navItem">
                                     <a class="footer_navLink" href="https://www.instagram.com/feazibleAI" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -502,17 +503,94 @@
     </script>
 
     <script>
-        function handleFormSubmission(event) {
-            event.preventDefault(); // Prevent the default form submission
+        document.querySelectorAll('.lets-talk-buttonss').forEach(function(button) {
+            button.addEventListener('click', function() {
+                // Fire the Facebook Pixel 'Lead' event
+                fbq('track', 'Contact');
+            });
+        });
+    </script>
+    <script>
+        // Add event listener to the "Let's Talk" button
+        document.querySelectorAll('.subscriberEmail').forEach(function(button) {
+            button.addEventListener('click', function() {
+                // Fire the Facebook Pixel 'Lead' event
+                fbq('track', 'CompleteRegistration');
+            });
+        });
+    </script>
 
-            // Trigger Facebook Pixel 'Contact' Event
-            fbq('track', 'Contact');
+    <style>
+        /* Initially hide the success and error messages */
+        .success-message,
+        .error-message {
+            display: none; /* Hidden by default */
+        }
+    </style>
 
-            // After tracking, allow form submission (optional delay for Pixel)
-            setTimeout(() => {
-                document.getElementById('contactForm').submit();
-            }, 200); // Adjust delay if needed
+    <script type="text/javascript">
+        // Initialize EmailJS with the updated method
+        (function () {
+            emailjs.init({
+                publicKey: "tq6K0QAFF43gk_tc-" // Replace with your PUBLIC_KEY
+            });
+        })();
+
+        // Function to handle email sending
+        function sendEmail(event) {
+            event.preventDefault();
+
+            // Ensure messages are hidden initially after form submission starts
+            document.getElementById('successMessage').style.display = 'none';
+            document.getElementById('errorMessage').style.display = 'none';
+
+            const templateParams = {
+                from_email: document.getElementById('email').value, // Get email from input
+            };
+
+            emailjs.send('service_iakimaq', 'template_csm4qpi', templateParams) // Replace with your Service ID and Template ID
+                .then(function (response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    document.getElementById('successMessage').style.display = 'block'; // Show success message
+                    document.getElementById('contactForm').reset(); // Reset form
+                })
+                .catch(function (error) {
+                    console.error('FAILED...', error);
+                    document.getElementById('errorMessage').style.display = 'block'; // Show error message
+                });
+
+            return false;
         }
     </script>
+    <script>
+        // Add event listeners for each social media icon
+        document.querySelector('.footer_social_nav').addEventListener('click', function(event) {
+            if (event.target.closest('a[href*="facebook.com"]')) {
+                fbq('trackCustom', 'Clicked Facebook');
+            } else if (event.target.closest('a[href*="x.com"]')) {
+                fbq('trackCustom', 'Clicked Twitter');
+            } else if (event.target.closest('a[href*="linkedin.com"]')) {
+                fbq('trackCustom', 'Clicked LinkedIn');
+            } else if (event.target.closest('a[href*="instagram.com"]')) {
+                fbq('trackCustom', 'Clicked Instagram');
+            }
+        });
+    </script>
+    <script>
+        // Add event listeners for each social media icon
+        document.querySelector('.footer_social_nav').addEventListener('click', function(event) {
+            if (event.target.closest('a[href*="facebook.com"]')) {
+                fbq('trackCustom', 'Clicked Facebook');
+            } else if (event.target.closest('a[href*="x.com"]')) {
+                fbq('trackCustom', 'Clicked Twitter');
+            } else if (event.target.closest('a[href*="linkedin.com"]')) {
+                fbq('trackCustom', 'Clicked LinkedIn');
+            } else if (event.target.closest('a[href*="instagram.com"]')) {
+                fbq('trackCustom', 'Clicked Instagram');
+            }
+        });
+    </script>
+    
+    
 </body>
 </html>
