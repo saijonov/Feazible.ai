@@ -4,26 +4,66 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI for Brick-and-Mortar: 5 Things You Need to Know</title>
+    
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="blog-page">
-      <header class="header">
-        <nav class="nav">
-          <div class="logo"></div>
-          <ul class="nav-list">
-            <li><a href="#" class="nav-item">Home</a></li>
-            <li><a href="#" class="nav-item">Solutions</a></li>
-            <li><a href="#" class="nav-item">Case studies</a></li>
-            <li><a href="#" class="nav-item">Contact Us</a></li>
-            <li><a href="#" class="nav-item active">Blog</a></li>
-            <li><a href="#" class="nav-item">Resources</a></li>
-          </ul>
-          <button class="cta-button">Let's Talk</button>
-        </nav>
-      </header>
+      <header class="header fixed-top">
+        
+        <div class="container container_lg">
+            <nav class="navbar navbar-expand-xl d-flex justify-content-between py-0">
+                <a class="navbar-brand py-0" href="../index.html">
+                    <img style="width: 200px; transform: scale(5);" class="header_logo" src="../assets/img/logonew.png" alt="feazible ai">
+                </a>
+                <div class="header_backDrop"></div>
+                <div class="header_navContent" id="header_navContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Solutions
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
+                                <li><a class="dropdown-item" href="../book-keeping.html">Book-keeping</a></li>
+                                <li><a class="dropdown-item" href="../chatbot.html">AI Chatbot</a></li>
+                                <li><a class="dropdown-item" href="../data-sync.html">Cross-Platform Sync</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../case-studies.html">Case studies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="blog/index.html">Blog Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../resources.html">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn_primary lets-talk-button" href="https://calendly.com/feazibleai">Let's talk</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler menu_toggleBtn" type="button">
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
 
       <main class="main-content">
         <h1 class="main-title">Events with Feazible AI</h1>
@@ -131,50 +171,115 @@
 
           <section class="cta-section">
             <h4>Only 8 Free AI Audits Left - Claim Yours Now Before They're Gone</h4>
-            <button class="cta-button">Get Your Free AI Audit</button>
+            <a class="btn btn_primary lets-talk-button" href="https://calendly.com/feazibleai">Get your free AI Audit</a>
           </section>
         </article>
       </main>
 
       <footer class="footer">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <div class="logo"></div>
-            <p>Feazible AI – Empowering businesses with AI-driven automation solutions.</p>
-          </div>
-          <div class="footer-links">
-            <h5>Quick Links</h5>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Book-keeping</a></li>
-              <li><a href="#">AI Chatbot</a></li>
-              <li><a href="#">Cross-Platform Sync</a></li>
-              <li><a href="#">Case studies</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Resources</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-            </ul>
-          </div>
-          <div class="footer-contact">
-            <h5>Contact Us</h5>
-            <p>Phone: <a href="tel:+447982145739">+44 7982 145 739</a></p>
-            <p>Email: <a href="mailto:CEO@feazible.ai">CEO@feazible.ai</a></p>
-          </div>
-          <div class="footer-social">
-            <h5>Follow Us</h5>
-            <div class="social-icons">
-              <a href="#" class="social-icon facebook"></a>
-              <a href="#" class="social-icon twitter"></a>
-              <a href="#" class="social-icon linkedin"></a>
-              <a href="#" class="social-icon instagram"></a>
+        <div class="container container_lg">
+            <div class="footer_top">
+                <div class="row g-4">
+                    <div class="footer_col_1">
+                        <div class="footer_colContent">
+                            <a class="footer_brand d-inline-block" href="../index.html">
+                                <img style="margin-top: -66px; margin-left: -36px; margin-bottom: -66px" class="footer_logo" src="../assets/img/logonew.png" alt="feazible ai">
+                            </a>
+                            <p class="fs_14 c_gray">Feazible AI – Empowering businesses with AI-driven automation solutions.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 footer_col_2">
+                        <div class="footer_colContent">
+                            <h2 class="footer_colTitle">Quick Links</h2>
+                            <ul class="footer_nav two-column-list">
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="../index.html">Home</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="../book-keeping.html">Book-keeping</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="../chatbot.html">AI Chatbot</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="../data-sync.html">Cross-Platform Sync</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="../chatbot.html">Case studies</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="../blog/index.html">Blog Page</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="../contact-us.html">Contact Us</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="../resources.html">Resources</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="../privacy-policy.html">Privacy Policy</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="../terms-of-service.html">Terms of Service</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-3 footer_col_3">
+                        <div class="footer_colContent">
+                            <h2 class="footer_colTitle">Contact Us</h2>
+                            <ul class="footer_nav">
+                                <li class="footer_navItem">
+                                    Phone: <a class="footer_navLink" href="tel:+447982145739" style="white-space: nowrap; font-family: Arial, sans-serif;">+44 7982 145 739</a>
+                                </li>                                
+                                
+                                <li class="footer_navItem">
+                                    Email: <a class="footer_navLink" href="mailto:info@aibookkeeping.com">CEO@feazible.ai</a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 footer_col_4">
+                        <div class="footer_colContent">
+                            <h2 class="footer_colTitle">Follow Us</h2>
+                            <ul class="footer_nav footer_social_nav">
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="https://www.facebook.com/share/1AqGZzyk4V/?mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="https://x.com/FeazibleAi" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="https://uk.linkedin.com/in/titas-j-ba8b1b122" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="https://www.instagram.com/feazibleAI" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 footer_col_5">
+                        <div class="footer_colContent text-center text-md-end">
+                            <a class="btn btn_primary lets-talk-button" href="https://calendly.com/feazibleai">Let's talk</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="footer_bottom">
+                <span>&copy; 2024 AI-Powered Bookkeeping Solutions. All rights reserved.</span>
+            </div>
         </div>
-        <div class="footer-bottom">
-          <p>© 2024 AI-Powered Bookkeeping Solutions. All rights reserved.</p>
-        </div>
-      </footer>
+    </footer>
     </div>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/aos.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+
+  
   </body>
 </html>

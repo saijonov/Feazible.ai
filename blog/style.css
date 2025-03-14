@@ -17,74 +17,12 @@ body {
     margin: 0 auto;
 }
 
-/* Header styles */
-.header {
-    background: linear-gradient(180deg, rgb(30, 41, 59) 0%, rgb(15, 23, 42) 100%);
-    padding: 20px 0;
-    box-shadow: 0px 20px 50px #00011e4c;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.logo {
-    width: 150px;
-    height: 45px;
-    background-image: url(https://c.animaapp.com/m87h4a5aZ27rVy/img/logonew-png.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.nav-list {
-    display: flex;
-    list-style: none;
-}
-
-.nav-item {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-.nav-item:hover {
-    color: #ffffff;
-}
-
-.nav-item.active {
-    color: #00ecff;
-}
-
-.cta-button {
-    background: linear-gradient(180deg, rgb(0, 236, 255) 0%, rgb(0, 98, 136) 100%);
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: transform 0.3s ease;
-}
-
-.cta-button:hover {
-    transform: scale(1.05);
-}
 
 /* Main content styles */
 .main-content {
     max-width: 1000px;
-    margin: 40px auto;
-    padding: 0 0px;
+    margin: 50px auto;
+    padding: 150px 0px;
 }
 
 .main-title {
@@ -106,6 +44,7 @@ body {
     font-size: var(--h3-font-size);
     margin-bottom: 30px;
     color: #ffffff;
+    text-align: center;
 }
 
 .blog-section1 {
@@ -313,6 +252,10 @@ body {
         width: 100%;
         margin-top: 15px;
     }
+    .main-title{
+        padding-top: 100px;
+    }
+
 
     .nav-item {
         padding: 12px 0;
@@ -354,7 +297,7 @@ body {
     }
 
     .image-container1 {
-        height: 30vh;
+        height: 60vh;
         margin-bottom: 40px;
     }
 
@@ -366,7 +309,7 @@ body {
 
     .image-container {
         width: 100%;
-        height: 200px;
+        height: 400px;
         margin-bottom: 0;
     }
 
@@ -442,3 +385,27 @@ body {
         font-size: 15px;
     }
 }
+
+
+
+
+
+.with-image p {
+    position: relative;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    animation: glowing-border 2s infinite alternate;
+  }
+  
+  @keyframes glowing-border {
+    0% {
+      border-color: rgba(19, 16, 160, 0.5);
+      box-shadow: 0 0 5px rgba(60, 6, 160, 0.5);
+    }
+    100% {
+      border-color: rgb(38, 2, 170);
+      box-shadow: 0 0 15px rgb(40, 6, 133);
+    }
+  }
+  
