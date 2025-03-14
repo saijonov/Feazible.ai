@@ -577,16 +577,10 @@
         });
     </script>
     <script>
-        // Add event listeners for each social media icon
-        document.querySelector('.footer_social_nav').addEventListener('click', function(event) {
-            if (event.target.closest('a[href*="facebook.com"]')) {
-                fbq('trackCustom', 'Clicked Facebook');
-            } else if (event.target.closest('a[href*="x.com"]')) {
-                fbq('trackCustom', 'Clicked Twitter');
-            } else if (event.target.closest('a[href*="linkedin.com"]')) {
-                fbq('trackCustom', 'Clicked LinkedIn');
-            } else if (event.target.closest('a[href*="instagram.com"]')) {
-                fbq('trackCustom', 'Clicked Instagram');
+        // Add event listener to the "Case studies" link
+        document.querySelector('.navbar-nav').addEventListener('click', function(event) {
+            if (event.target.closest('a[href="case-studies.html"]')) {
+                fbq('trackCustom', 'Case-Study Clicked');
             }
         });
     </script>

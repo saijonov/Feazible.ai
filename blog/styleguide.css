@@ -1,0 +1,32 @@
+:root {
+    --h1-font-family: "Raleway", Helvetica;
+    --h1-font-weight: 800;
+    --h1-font-size: 70px;
+    --h1-letter-spacing: 0px;
+    --h1-line-height: 84px;
+  
+    --h2-font-family: "Raleway", Helvetica;
+    --h2-font-weight: 700;
+    --h2-font-size: 38px;
+    --h2-letter-spacing: 0px;
+    --h2-line-height: 45.6px;
+  
+    --h3-font-family: "Raleway", Helvetica;
+    --h3-font-weight: 600;
+    --h3-font-size: 32px;
+    --h3-letter-spacing: 0px;
+    --h3-line-height: 38.4px;
+  
+    --body-font-family: "Open Sans", Helvetica;
+    --body-font-weight: 400;
+    --body-font-size: 20px;
+    --body-letter-spacing: 0px;
+    --body-line-height: 30px;
+  
+    --button-font-family: "Raleway", Helvetica;
+    --button-font-weight: 500;
+    --button-font-size: 20px;
+    --button-letter-spacing: 0px;
+    --button-line-height: 24px;
+  }
+  

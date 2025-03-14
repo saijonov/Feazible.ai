@@ -567,6 +567,15 @@
             }
         });
     </script>
+    <script>
+        // Add event listener to the "Case studies" link
+        document.querySelector('.navbar-nav').addEventListener('click', function(event) {
+            if (event.target.closest('a[href="case-studies.html"]')) {
+                fbq('trackCustom', 'Case-Study Clicked');
+            }
+        });
+    </script>
+    
     
 </body>
 </html>

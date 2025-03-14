@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Business Consultation</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        background-color: #0a192f;
+        color: #e6f1ff;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .feature-card {
+        background: linear-gradient(145deg, #112240, #1a365d);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    .feature-image {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 1.5rem;
+        transform: perspective(1000px) rotateX(2deg);
+        transition: transform 0.3s ease;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+    
+    .feature-card:hover .feature-image {
+        transform: perspective(1000px) rotateX(0deg);
+    }
+    
+    
+</style>
+
+<body style="font-family: 'Raleway', sans-serif;">
+    <!-- Header Section -->
+    <header class="header fixed-top">
+        
+        <div class="container container_lg">
+            <nav class="navbar navbar-expand-xl d-flex justify-content-between py-0">
+                <a class="navbar-brand py-0" href="index.html">
+                    <img style="width: 200px; transform: scale(5);" class="header_logo" src="assets/img/logonew.png" alt="feazible ai">
+                </a>
+                <div class="header_backDrop"></div>
+                <div class="header_navContent" id="header_navContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Solutions
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
+                                <li><a class="dropdown-item" href="book-keeping.html">Book-keeping</a></li>
+                                <li><a class="dropdown-item active" href="chatbot.html">AI Chatbot</a></li>
+                                <li><a class="dropdown-item" href="data-sync.html">Cross-Platform Sync</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="case-studies.html">Case studies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resources.html">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn_primary lets-talk-button" href="https://calendly.com/feazibleai">Let's talk</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler menu_toggleBtn" type="button">
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero_section3" id="vanta_bg">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="hero_content">
+                            <h1 class="hero_title">5 Ways AI Streamlines Your Bookkeeping</h1>
+                            <p class="hero_desc" data-aos="fade-up">
+                                Cut costs, save hours, and focus on growing your busines.
+                            </p>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Overview Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <p class="lead mb-5" data-aos="fade-up">
+                            Running a small business often means juggling a lot of tasks at once. Between managing customers, marketing your services, and keeping everything running smoothly, it's easy to let financial details slip through the cracks. That's where AI-powered bookkeeping comes in.
+                        </p>
+
+                        <!-- Feature Cards -->
+                        <div class="feature-card" data-aos="fade-up">
+                            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1600&q=80" 
+                                 alt="Automatic Data Entry" 
+                                 class="feature-image">
+                            <h2 class="h3 mb-4">1. Automatic Data Entry</h2>
+                            <p class="">
+                                Say goodbye to typing numbers from receipts or invoices into a spreadsheet. AI-powered solutions can scan and extract data from your documents, then plug that information into your accounting system automatically. This not only saves time but also helps prevent human errors and typos that can cost you money.
+                            </p>
+                        </div>
+
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80" 
+                                 alt="Real-Time Expense Tracking" 
+                                 class="feature-image">
+                            <h2 class="h3 mb-4">2. Real-Time Expense Tracking</h2>
+                            <p class="">
+                                With AI, you don't have to wait until the end of the month to understand your cash flow. The software updates your financial records as transactions occur, giving you instant visibility into where your money's going. This makes it easier to make quick decisions and catch any issues before they become major problems.
+                            </p>
+                        </div>
+
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80" 
+                                 alt="Smarter Categorization" 
+                                 class="feature-image">
+                            <h2 class="h3 mb-4">3. Smarter Categorization</h2>
+                            <p class="">
+                                One of the trickiest parts of bookkeeping is deciding how to categorize each expense. AI tools learn from your past decisions and automatically sort new transactions into the right categories. Over time, this reduces the guesswork and ensures consistent, accurate accounting records.
+                            </p>
+                        </div>
+
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                            <img src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80" 
+                                 alt="Quick Reconciliations" 
+                                 class="feature-image">
+                            <h2 class="h3 mb-4">4. Quick Reconciliations</h2>
+                            <p class="">
+                                Balancing your accounts used to mean spending late nights comparing bank statements and receipts. Now, AI can match transactions to invoices and statements in seconds. This speedy reconciliation process helps you close out your books faster and frees you up to focus on more meaningful work—like growing your business.
+                            </p>
+                        </div>
+
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80" 
+                                 alt="Effortless Insights" 
+                                 class="feature-image">
+                            <h2 class="h3 mb-4">5. Effortless Insights and Reporting</h2>
+                            <p class="">
+                                With just a few clicks, AI can generate easy-to-read reports that highlight trends, show where you're earning the most profit, and point out areas where you might be overspending. These insights help you stay informed and make smart financial decisions, without needing an advanced accounting degree.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-5" style="background: linear-gradient(145deg, #1a365d, #0a192f);">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="h1 mb-4" data-aos="fade-up">Ready to Simplify Your Bookkeeping?</h2>
+                        <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">
+                            Embracing AI bookkeeping isn't about replacing your accountant or going it alone—it's about giving yourself the right tools to stay organized, save time, and keep your finances healthy.
+                        </p>
+                        <a href="https://calendly.com/feazibleai" class="btn btn_primary btn-lg" data-aos="fade-up" data-aos-delay="200">Let's Talk</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container container_lg">
+            <div class="footer_top">
+                <div class="row g-4">
+                    <div class="footer_col_1">
+                        <div class="footer_colContent">
+                            <a class="footer_brand d-inline-block" href="index.html">
+                                <img style="margin-top: -66px; margin-left: -36px; margin-bottom: -66px" class="footer_logo" src="assets/img/logonew.png" alt="feazible ai">
+                            </a>
+                            <p class="fs_14 c_gray">Feazible AI – Empowering businesses with AI-driven automation solutions.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 footer_col_2">
+                        <div class="footer_colContent">
+                            <h2 class="footer_colTitle">Quick Links</h2>
+                            <ul class="footer_nav two-column-list">
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="index.html">Home</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="book-keeping.html">Book-keeping</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="chatbot.html">AI Chatbot</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="data-sync.html">Cross-Platform Sync</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="chatbot.html">Case studies</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="contact-us.html">Contact Us</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="resources.html">Resources</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="privacy-policy.html">Privacy Policy</a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="terms-of-service.html">Terms of Service</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-3 footer_col_3">
+                        <div class="footer_colContent">
+                            <h2 class="footer_colTitle">Contact Us</h2>
+                            <ul class="footer_nav">
+                                <li class="footer_navItem">
+                                    Phone: <a class="footer_navLink" href="tel:+447982145739" style="white-space: nowrap; font-family: Arial, sans-serif;">+44 7982 145 739</a>
+                                </li>                                
+                                
+                                <li class="footer_navItem">
+                                    Email: <a class="footer_navLink" href="mailto:info@aibookkeeping.com">CEO@feazible.ai</a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 footer_col_4">
+                        <div class="footer_colContent">
+                            <h2 class="footer_colTitle">Follow Us</h2>
+                            <ul class="footer_nav footer_social_nav">
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="https://www.facebook.com/share/1AqGZzyk4V/?mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="https://x.com/FeazibleAi" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="https://uk.linkedin.com/in/titas-j-ba8b1b122" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                </li>
+                                <li class="footer_navItem">
+                                    <a class="footer_navLink" href="https://www.instagram.com/feazibleAI" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 footer_col_5">
+                        <div class="footer_colContent text-center text-md-end">
+                            <a class="btn btn_primary lets-talk-button" href="https://calendly.com/feazibleai">Let's talk</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <span>&copy; 2024 AI-Powered Bookkeeping Solutions. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+    <!-- __________________ end footer area  __________________ -->
+
+    <!-- .......... scripts .......... -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"></script>
+
+    <style>
+        /* Vanta Background Wrapper */
+        #vanta_bg {
+            position: relative;
+            overflow: hidden;
+        }
+    
+        /* Shadow effect with gradient */
+        #vanta_bg::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 30%; /* Shadow height */
+            background: linear-gradient(to top, #0a192f, rgba(0, 0, 0, 0));
+            z-index: 1;
+            pointer-events: none; /* Ensure it doesn't block interaction */
+        }
+    
+        /* Ensure content appears above the shadow */
+        .hero_content {
+            position: relative;
+            z-index: 2; /* Elevate content above shadow and animation */
+            text-align: center;
+            color: white;
+        }
+    </style>
+    <script>
+        // Initialize Vanta.js on the hero_section3
+        VANTA.BIRDS({
+            el: "#vanta_bg", // Target the hero_section3 by ID
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            backgroundColor: 0x31450,
+            color1: 0x0,
+            color2: 0x84d5f,
+            colorMode: "lerp",
+            birdSize: 0.80,
+            cohesion: 16.00
+
+        });
+    </script>
+</body>
+</html>
