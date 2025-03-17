@@ -116,64 +116,83 @@
 
         <!-- ... start Benefits of Al Integration for Your Business section ... -->
         <section class="benefits_section">
-            <div class="container container_md">
-                <div class="wac_content">
-                    <h2 class="section_title title_underline">How AI will benefit your business</h2>
+            <div style="max-width: 1000px; margin: auto; padding: 0 20px;">
+                <h2 class="section_title title_underline">
+                    How AI Will Benefit Your Business
+                </h2>
+
+                <div id="benefits-container" style="display: flex; flex-direction: column; gap: 30px; opacity: 0; transform: translateY(20px); transition: opacity 1s ease-out, transform 1s ease-out;">
                     
-                    <div class="benefit_list">
-                        <div class="benefit_item" data-aos="zoom-out" data-aos-delay="0">
-                            <div class="benefit_content">
-                                <div class="benefit_iconBox">
-                                    <div class="benefit_num">01</div>
-                                    <img class="benefit_icon_1" src="assets/img/chatbot-4/icon-advantage.png" alt="advantage">
-                                </div>
-                                <div class="benefit_contentBox">
-                                    <h3 class="benefit_title">Competitive Advantage:</h3>
-                                    <p class="benefit_desc">AI helps businesses become more competitive by streamlining operations, reducing costs, enhancing decision-making, and personalizing customer experiences to drive efficiency and profitability.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="benefit_item" data-aos="zoom-out" data-aos-delay="100">
-                            <div class="benefit_content">
-                                <div class="benefit_iconBox">
-                                    <div class="benefit_num">02</div>
-                                    <img class="benefit_icon_1" src="assets/img/chatbot-4/icon-accuracy.png" alt="accuracy">
-                                </div>
-                                <div class="benefit_contentBox">
-                                    <h3 class="benefit_title">Intuitive Accuracy:</h3>
-                                    <p class="benefit_desc">Al systems enhance decision-making processes with precise and data-driven insights, minimizing errors and maximizing performance.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="benefit_item" data-aos="zoom-out" data-aos-delay="200">
-                            <div class="benefit_content">
-                                <div class="benefit_iconBox">
-                                    <div class="benefit_num">03</div>
-                                    <img class="benefit_icon_1" src="assets/img/chatbot-4/icon-savings.png" alt="savings">
-                                </div>
-                                <div class="benefit_contentBox">
-                                    <h3 class="benefit_title">Cost Savings:</h3>
-                                    <p class="benefit_desc">By automating routine tasks, Al reduces operational costs, freeing up resources to invest in growth and innovation.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="benefit_item" data-aos="zoom-out" data-aos-delay="300">
-                            <div class="benefit_content">
-                                <div class="benefit_iconBox">
-                                    <div class="benefit_num">04</div>
-                                    <img class="benefit_icon_1" src="assets/img/chatbot-4/icon-efficiency.png" alt="efficiency">
-                                </div>
-                                <div class="benefit_contentBox">
-                                    <h3 class="benefit_title">Improved Efficiency:</h3>
-                                    <p class="benefit_desc">Al streamlines workflows and optimizes processes, resulting in faster turnaround times and increased productivity across all business operations.</p>
-                                </div>
-                            </div>
+                    <!-- Benefit Item -->
+                    <div class="benefit-item" style="display: flex; align-items: center; background: rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 20px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; opacity: 0; transform: translateY(50px);"
+                        onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='10px 10px 30px rgba(0, 0, 0, 0.7)';"
+                        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='5px 5px 15px rgba(0, 0, 0, 0.5)';">
+                        
+                        <img src="assets/benefits/competitive.jpg" alt="Competitive Advantage"
+                            style="width: 200px; height: 150px; object-fit: cover; border-radius: 8px; margin-right: 20px;">
+                        
+                        <div style="text-align: left;">
+                            <h3 style="font-size: 16px; font-weight: bold; color: #fff; margin-bottom: 10px;">Competitive Advantage</h3>
+                            <p style="font-size: 14px; color: #ddd; line-height: 1.5;">
+                                AI helps businesses stay ahead by streamlining operations and enhancing decision-making.
+                            </p>
                         </div>
                     </div>
+
+                    <!-- More Benefits (Same structure) -->
+                    <div class="benefit-item" style="display: flex; align-items: center; background: rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 20px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; opacity: 0; transform: translateY(50px);"
+                        onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='10px 10px 30px rgba(0, 0, 0, 0.7)';"
+                        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='5px 5px 15px rgba(0, 0, 0, 0.5)';">
+                        
+                        <img src="assets/benefits/intuitive.webp" alt="Intuitive Accuracy"
+                            style="width: 200px; height: 150px; object-fit: cover; border-radius: 8px; margin-right: 20px;">
+                        
+                        <div style="text-align: left;">
+                            <h3 style="font-size: 16px; font-weight: bold; color: #fff; margin-bottom: 10px;">Intuitive Accuracy</h3>
+                            <p style="font-size: 14px; color: #ddd; line-height: 1.5;">
+                                Al systems enhance decision-making processes with precise and data-driven insights, minimizing errors and maximizing performance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item" style="display: flex; align-items: center; background: rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 20px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; opacity: 0; transform: translateY(50px);"
+                        onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='10px 10px 30px rgba(0, 0, 0, 0.7)';"
+                        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='5px 5px 15px rgba(0, 0, 0, 0.5)';">
+                        
+                        <img src="assets/benefits/cost.jpg" alt="Cost Savings"
+                            style="width: 200px; height: 150px; object-fit: cover; border-radius: 8px; margin-right: 20px;">
+                        
+                        <div style="text-align: left;">
+                            <h3 style="font-size: 16px; font-weight: bold; color: #fff; margin-bottom: 10px;">Cost Savings</h3>
+                            <p style="font-size: 14px; color: #ddd; line-height: 1.5;">
+                                By automating routine tasks, Al reduces operational costs, freeing up resources to invest in growth and innovation.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="benefit-item" style="display: flex; align-items: center; background: rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 20px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; opacity: 0; transform: translateY(50px);"
+                        onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='10px 10px 30px rgba(0, 0, 0, 0.7)';"
+                        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='5px 5px 15px rgba(0, 0, 0, 0.5)';">
+                        
+                        <img src="assets/benefits/eff.jpg" alt="Intuitive Accuracy"
+                            style="width: 200px; height: 150px; object-fit: cover; border-radius: 8px; margin-right: 20px;">
+                        
+                        <div style="text-align: left;">
+                            <h3 style="font-size: 16px; font-weight: bold; color: #fff; margin-bottom: 10px;">Improved Efficiency</h3>
+                            <p style="font-size: 14px; color: #ddd; line-height: 1.5;">
+                                Al streamlines workflows and optimizes processes, resulting in faster turnaround times and increased productivity across all business operations.
+                            </p>
+                        </div>
+                    </div>
+
 
                 </div>
             </div>
         </section>
+
+
         <!-- ... end Benefits of Al Integration for Your Business section ... -->
 
         <!-- ... start Our Services section ... -->
@@ -628,6 +647,38 @@
                 fbq('trackCustom', 'Case-Study Clicked');
             }
         });
+    </script>
+
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        let container = document.getElementById("benefits-container");
+                        container.style.opacity = "1";
+                        container.style.transform = "translateY(0)";
+
+                        let items = document.querySelectorAll(".benefit-item");
+                        items.forEach((item, index) => {
+                            setTimeout(() => {
+                                item.style.opacity = "1";
+                                item.style.transform = "translateY(0)";
+                            }, index * 500);
+                        });
+
+                        // Stop observing after animation triggers
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.3 }); // Adjust threshold as needed
+
+            observer.observe(document.getElementById("benefits-container"));
+        });
+
     </script>
     
     

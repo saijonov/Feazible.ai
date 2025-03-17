@@ -53,6 +53,11 @@ body {
 p,ul,input,button{
   font-size: var(--fs_19);
 }
+
+
+
+
+
 .ff_work_sans{font-family: var(--ff_work_sans);}
 .ff_roboto_slab{font-family: var(--ff_roboto_slab);}
 .ff_roboto{font-family: var(--ff_roboto);}
@@ -1643,43 +1648,20 @@ h2,
 
 /* ... start Benefits of Al Integration for Your Business section ... */
 .benefits_section{
+  width: 100%;
   padding: 11.5rem 0rem 7.5rem;
   position: relative;
 }
-.benefits_section::before{
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 50%;
-  top: 15%;
-  font-size: 73.625rem;
-  width: 1em;
-  height: 0.562em;
-  border-radius: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background: rgba(1, 122, 186, 0.15);
-  -webkit-filter: blur(7.2531rem);
-          filter: blur(7.2531rem);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
+
 .benefits_section .section_title{
   margin-bottom: 5rem;
 }
-.benefit_list{
 
-}
 .benefit_item{
   margin-bottom: 4.75rem;
-  width: 84%;
+  width: 100%;
 }
-.benefit_item:nth-of-type(2n+1){
-  margin-left: auto;
-}
+
 .benefit_content{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1688,7 +1670,7 @@ h2,
       -ms-flex-align: center;
           align-items: center;
   background-color: #0F2238;
-  border-radius: 50rem;
+  border-radius: 1rem;
   padding: 0.75rem 4rem 0.75rem 15rem;
   position: relative;
   min-height: 10.25rem;

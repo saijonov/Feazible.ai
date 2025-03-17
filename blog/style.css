@@ -129,7 +129,9 @@ body {
     flex-shrink: 0; /* Prevent image from shrinking */
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow:  
+        10px 10px 20px rgba(255, 255, 255, 0.4),  /* Soft white glow bottom-right */
+        -10px -10px 20px rgba(255, 255, 255, 0.2);
 }
 
 .blog-image {
